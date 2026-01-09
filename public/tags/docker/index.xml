@@ -13,7 +13,7 @@
       <link>http://localhost:1313/2018/03/13/use-docker-behind-http-proxy/</link>
       <pubDate>Tue, 13 Mar 2018 18:00:00 +0000</pubDate>
       <guid>http://localhost:1313/2018/03/13/use-docker-behind-http-proxy/</guid>
-      <description>&lt;h2 id=&#34;ubuntu&#34;&gt;Ubuntu&lt;/h2&gt;&#xA;&lt;h3 id=&#34;设置docker使用http-proxy&#34;&gt;设置docker使用http proxy&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo /etc/default/docker&#xA;&#xA;export http_proxy=&amp;#34;http://127.0.0.1:3128/&amp;#34;&#xA;export https_proxy=&amp;#34;http://127.0.0.1:3128/&amp;#34;&#xA;export HTTP_PROXY=&amp;#34;http://127.0.0.1:3128/&amp;#34;&#xA;export HTTPS_PROXY=&amp;#34;http://127.0.0.1:3128/&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>&lt;h2 id=&#34;ubuntu&#34;&gt;Ubuntu&lt;/h2&gt;&#xA;&lt;h3 id=&#34;设置docker使用http-proxy&#34;&gt;设置docker使用http proxy&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo /etc/default/docker&#xD;&#xA;&#xD;&#xA;export http_proxy=&amp;#34;http://127.0.0.1:3128/&amp;#34;&#xD;&#xA;export https_proxy=&amp;#34;http://127.0.0.1:3128/&amp;#34;&#xD;&#xA;export HTTP_PROXY=&amp;#34;http://127.0.0.1:3128/&amp;#34;&#xD;&#xA;export HTTPS_PROXY=&amp;#34;http://127.0.0.1:3128/&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>如何使用非root用户执行docker命令</title>

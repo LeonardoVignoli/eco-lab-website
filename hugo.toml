@@ -73,14 +73,66 @@ defaultContentLanguageInSubdir = false
 [languages]
 
   [languages.it]
-    languageName = "Italiano"
-    weight = 1
-    title = "ECB – Ecologia e Conservazione della Biodiversità"
+languageName = "Italiano"
+weight = 1
+title = "ECB – Ecologia e Conservazione della Biodiversità"
 
-  [languages.en]
-    languageName = "English"
-    weight = 2
-    title = "ECB – Ecology and Conservation of Biodiversity"
+  [[languages.it.menu.main]]
+  name = "Home"
+  pageRef = "/lab"
+  weight = 1
+
+  [[languages.it.menu.main]]
+  name = "Ricerca"
+  pageRef = "/research"
+  weight = 2
+
+  [[languages.it.menu.main]]
+  name = "Progetti"
+  pageRef = "/projects"
+  weight = 3
+
+  [[languages.it.menu.main]]
+  name = "Persone"
+  pageRef = "/people"
+  weight = 4
+
+  [[languages.it.menu.main]]
+  name = "Opportunità"
+  pageRef = "/opportunities"
+  weight = 5
+
+
+[languages.en]
+languageName = "English"
+weight = 2
+title = "ECB – Ecology and Conservation of Biodiversity"
+
+  [[languages.en.menu.main]]
+  name = "Home"
+  pageRef = "/lab"
+  weight = 1
+
+  [[languages.en.menu.main]]
+  name = "Research"
+  pageRef = "/research"
+  weight = 2
+
+  [[languages.en.menu.main]]
+  name = "Projects"
+  pageRef = "/projects"
+  weight = 3
+
+  [[languages.en.menu.main]]
+  name = "People"
+  pageRef = "/people"
+  weight = 4
+
+  [[languages.en.menu.main]]
+  name = "Opportunities"
+  pageRef = "/opportunities"
+  weight = 5
+
 
 
   #Enable wechat pay & alipay to allow readers send reward money if they like the articles 

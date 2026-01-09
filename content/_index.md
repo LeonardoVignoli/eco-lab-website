@@ -2,9 +2,9 @@
 title: "ECB – Ecologia e Conservazione della Biodiversità"
 ---
 
-## Benvenuti
+## ECB — Ecologia e Conservazione della Biodiversità
 
-Il sito del laboratorio ECB è disponibile alla pagina principale:
-👉 **[Vai al laboratorio →](/lab/)**
+👉 **[Entra nel sito →](/lab/)**  
+👉 **[English version →](/en/lab/)**
 
 
