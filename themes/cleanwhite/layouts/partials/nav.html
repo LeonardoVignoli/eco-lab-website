@@ -27,7 +27,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="{{ "/" | relLangURL }}">All Posts</a>
-                    </li>
+                  
+</li>
                     {{ if not .Site.Params.omit_categories }}
                         {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
                         <li>
