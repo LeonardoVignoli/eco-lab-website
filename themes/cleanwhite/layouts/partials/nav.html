@@ -37,9 +37,22 @@
                         {{ end }}
                     {{ end }}
                     
+
 		    {{ range .Site.Params.additional_menus }}
                         <li><a href="{{.href | relLangURL}}/">{{.title}}</a></li>
                     {{ end }}
+{{/* Language switch: last item before Search */}}
+{{ $p := . }}
+{{ if .IsHome }}{{ $p = .Site.Home }}{{ end }}
+{{ $cur := .Site.Language.Lang }}
+{{ range $p.AllTranslations }}
+  {{ if ne .Language.Lang $cur }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ upper .Language.Lang }}</a>
+    </li>
+  {{ end }}
+{{ end }}
+
 		            <li>
                         <a href="{{ "search" | relURL }}"><i class="fa fa-search"></i></a>
 		           </li>
