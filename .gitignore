@@ -1,4 +1,7 @@
 public/
 resources/
 .hugo_build.lock
-.DS_Store
+.DS_Storethemes/cleanwhite_backup/
+public/
+resources/
+.hugo_build.lock
