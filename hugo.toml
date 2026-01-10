@@ -1,7 +1,11 @@
-baseurl = "https://localhost:1313/"
+baseURL = "http://localhost:1313/"
 title = "ECB - Ecologia e Conservazione della Biodiversità"
 theme = "cleanwhite"
 languageCode = "it"
+
+defaultContentLanguage = "it"
+defaultContentLanguageInSubdir = false
+
 preserveTaxonomyNames = true
 hasCJKLanguage = true
 
@@ -67,8 +71,6 @@ home = ["HTML", "RSS"]
   artalk_server = "https://xxx.xxx.com"
   artalk_site = "xxx blog"
 
-defaultContentLanguage = "it"
-defaultContentLanguageInSubdir = false
 
 [languages]
 

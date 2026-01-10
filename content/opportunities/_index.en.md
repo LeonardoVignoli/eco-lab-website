@@ -1,5 +1,5 @@
 ---
-title: "Research"
+title: "Opportunities"
 ---
 
 Content coming soon.

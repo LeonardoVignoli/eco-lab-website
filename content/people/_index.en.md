@@ -1,5 +1,5 @@
 ---
-title: "Research"
+title: "People"
 ---
 
 Content coming soon.
