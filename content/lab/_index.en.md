@@ -1,10 +1,10 @@
 ---
-title: "ECB — Ecology and Conservation of Biodiversity"
+title: "LEC — Lab for Ecology & Conservation"
 ---
 
 **From field research to conservation action**
 
-The **ECB – Ecology and Biodiversity Conservation** laboratory is part of the
+The **LEC — Lab for Ecology & Conservation** is part of the
 Department of Sciences at Roma Tre University.
 
 Our research activities focus on the ecological processes that regulate

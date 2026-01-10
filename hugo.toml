@@ -1,5 +1,5 @@
 baseURL = "http://localhost:1313/"
-title = "ECB - Ecologia e Conservazione della Biodiversità"
+title = "LEC - Lab for Ecology & Conservation"
 theme = "cleanwhite"
 languageCode = "it"
 
@@ -24,7 +24,7 @@ home = ["HTML", "RSS"]
 
 [params]
   header_image = ""
-  SEOTitle = "ECB | Ecologia e Conservazione della Biodiversità"
+  SEOTitle = "LEC - Lab for Ecology & Conservation"
   description = "Laboratorio di Ecologia e Conservazione della Biodiversità - Università Roma Tre"
   keyword = "ecologia, conservazione, biodiversità, anfibi, rettili, università roma tre"
   slogan = "Dalla ricerca sul campo alle azioni di conservazione"
@@ -77,7 +77,7 @@ home = ["HTML", "RSS"]
   [languages.it]
 languageName = "Italiano"
 weight = 1
-title = "ECB – Ecologia e Conservazione della Biodiversità"
+title = "LEC - Lab for Ecology & Conservation"
 
   [[languages.it.menu.main]]
   name = "Home"
@@ -104,11 +104,16 @@ title = "ECB – Ecologia e Conservazione della Biodiversità"
   pageRef = "/opportunities"
   weight = 5
 
+  [[languages.it.menu.main]]
+  name = "News"
+  pageRef = "/post"
+  weight = 99
+
 
 [languages.en]
 languageName = "English"
 weight = 2
-title = "ECB – Ecology and Conservation of Biodiversity"
+title = "LEC - Lab for Ecology & Conservation"
 
   [[languages.en.menu.main]]
   name = "Home"
@@ -135,6 +140,10 @@ title = "ECB – Ecology and Conservation of Biodiversity"
   pageRef = "/opportunities"
   weight = 5
 
+  [[languages.en.menu.main]]
+  name = "News"
+  pageRef = "/post"
+  weight = 99
 
 
   #Enable wechat pay & alipay to allow readers send reward money if they like the articles 

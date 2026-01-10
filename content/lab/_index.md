@@ -1,10 +1,10 @@
 ---
-title: "ECB — Ecologia e Conservazione della Biodiversità"
+title: "LEC — Lab for Ecology & Conservation"
 ---
 
 **Dalla ricerca sul campo alle azioni di conservazione**
 
-Il laboratorio **ECB – Ecologia e Conservazione della Biodiversità** afferisce al
+Il laboratorio **LEC - Lab for Ecology & Conservation** afferisce al
 Dipartimento di Scienze dell’Università degli Studi Roma Tre.
 
 Le nostre attività di ricerca si concentrano sui processi ecologici che regolano
