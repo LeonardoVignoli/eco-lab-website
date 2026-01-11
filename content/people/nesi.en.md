@@ -1,6 +1,7 @@
 ---
 title: "Priscilla Nesi"
 role: "Post-doc"
+weight: 20
 image: "/img/people/nesi.jpg"
 ---
 

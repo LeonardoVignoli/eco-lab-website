@@ -1,6 +1,7 @@
 ---
 title: "Leonardo Vignoli"
 role: "Responsabile del laboratorio — Professore Associato di Zoologia"
+weight: 10
 image: "/img/people/vignoli.jpg"
 email: "leonardo.vignoli@uniroma3.it"
 ---
