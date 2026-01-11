@@ -1,5 +1,6 @@
 ---
-title: "LEC — Lab for Ecology & Conservation"
+title: "LEC – Lab for Ecology & Conservation"
+header_image: "img/home-bg.jpg"
 ---
 
 **From field research to conservation action**
