@@ -1,0 +1,21 @@
+{{ define "main" }}
+<header class="intro-header">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.role }}<p style="margin:0; opacity:.85;">{{ . }}</p>{{ end }}
+    {{ with .Params.email }}<p style="margin:0;"><a href="mailto:{{ . }}">{{ . }}</a></p>{{ end }}
+  </div>
+</header>
+
+<div class="container">
+  {{ with .Params.image }}
+    <div style="max-width:420px; margin:0 auto 18px;">
+      <img src="{{ . }}" alt="{{ $.Title }}" style="width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:16px;">
+    </div>
+  {{ end }}
+
+  <article class="post-content">
+    {{ .Content }}
+  </article>
+</div>
+{{ end }}

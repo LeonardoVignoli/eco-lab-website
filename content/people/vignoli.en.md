@@ -1,11 +1,8 @@
 ---
-
 title: "Leonardo Vignoli"
-
-role: "Principal Investigator — Associate Professor of Zoology"
-
+role: "Responsabile del laboratorio — Professore Associato di Zoologia"
+image: "/img/people/vignoli.jpg"
 email: "leonardo.vignoli@uniroma3.it"
-
 ---
 
 

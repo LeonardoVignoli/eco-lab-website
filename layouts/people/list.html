@@ -1,0 +1,31 @@
+{{ define "main" }}
+<header class="intro-header">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}<div class="post-heading">{{ . }}</div>{{ end }}
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    {{ range .Pages.ByTitle }}
+      <div class="col-md-4 col-sm-6" style="margin-bottom:24px;">
+        <div class="post-preview" style="border:1px solid #eee; border-radius:12px; padding:16px;">
+          {{ $img := .Params.image }}
+          {{ if $img }}
+            <a href="{{ .RelPermalink }}">
+              <img src="{{ $img }}" alt="{{ .Title }}" style="width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:12px;">
+            </a>
+          {{ end }}
+          <h3 style="margin-top:12px; margin-bottom:6px;">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h3>
+          {{ with .Params.role }}
+            <p style="margin:0; opacity:.8;">{{ . }}</p>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

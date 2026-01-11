@@ -1,13 +1,9 @@
 ---
-
 title: "Leonardo Vignoli"
-
 role: "Responsabile del laboratorio — Professore Associato di Zoologia"
-
+image: "/img/people/vignoli.jpg"
 email: "leonardo.vignoli@uniroma3.it"
-
 ---
-
 
 
 Leonardo Vignoli è Professore Associato di Zoologia presso l’Università Roma Tre e

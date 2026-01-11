@@ -1,9 +1,7 @@
 ---
-
 title: "Priscilla Nesi"
-
-role: "Postdoctoral researcher"
-
+role: "Post-doc"
+image: "/img/people/nesi.jpg"
 ---
 
 
