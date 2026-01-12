@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+      {{ range .Pages.ByDate.Reverse }}
+        <article class="post-preview">
+          <a href="{{ .RelPermalink }}">
+            <h2 class="post-title">{{ .Title }}</h2>
+            {{ with .Params.subtitle }}
+              <h3 class="post-subtitle">{{ . }}</h3>
+            {{ end }}
+          </a>
+
+          <p class="post-meta">
+            Posted by {{ .Params.author | default .Site.Title }}
+            on {{ .Date.Format "January 2, 2006" }}
+          </p>
+        </article>
+        <hr>
+      {{ end }}
+
+    </div>
+  </div>
+</div>
+{{ end }}
+
