@@ -1,5 +1,7 @@
 ---
 title: "Persone"
+header_image: "/img/headers/people.jpg"
+
 ---
 
 ## Responsabile del laboratorio

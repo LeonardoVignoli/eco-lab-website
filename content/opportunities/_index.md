@@ -1,6 +1,7 @@
 ---
 
 title: "Opportunità"
+header_image: "/img/headers/opportunities.jpg"
 
 ---
 

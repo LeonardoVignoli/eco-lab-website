@@ -27,7 +27,9 @@ category = "categories"
 tag = "tags"
 
 [params]
-  header_image = ""
+  header_image_home = "img/home-bg.jpg"
+  header_image_default = "img/header-default.jpg"
+
   SEOTitle = "LEC - Lab for Ecology & Conservation"
   description = "Laboratorio di Ecologia e Conservazione della Biodiversità - Università Roma Tre"
   keyword = "ecologia, conservazione, biodiversità, anfibi, rettili, università roma tre"

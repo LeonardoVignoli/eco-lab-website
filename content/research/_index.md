@@ -1,5 +1,8 @@
 ---
 title: "Ricerca"
+header_image: "/img/headers/research.jpg"
+
+
 ---
 
 Il laboratorio **LEC – Lab for Ecology & Conservation** svolge attività di ricerca sui

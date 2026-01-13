@@ -1,0 +1,5 @@
+
+cd C:\Users\leonx\Desktop\eco-lab-website
+
+hugo server -D
+hugo server -D --disableFastRender

@@ -1,5 +1,7 @@
 ---
 title: "Research"
+header_image: "/img/headers/research.jpg"
+
 ---
 
 The **LEC – Lab for Ecology & Conservation** carries out research on the ecological

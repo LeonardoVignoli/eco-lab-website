@@ -4,7 +4,15 @@
 {{ partial "nav.html" . }}
 <!-- Page Header -->
 {{ block "header" .}}
-<header class="intro-header" style="background-image: url('{{ (or .Params.header_image (index .Params "header-img") .Site.Params.header_image) | relURL }}')">
+{{ $isHome := .IsHome }}
+{{ $isLab := and .IsSection (eq .Section "lab") }}
+{{ $isHero := or $isHome $isLab }}
+
+{{ $pageHeader := or .Params.header_image (index .Params "header-img") }}
+{{ $header := cond $isHome .Site.Params.header_image_home (or $pageHeader .Site.Params.header_image_default) }}
+
+<header class="intro-header{{ if $isHero }} home-hero{{ end }}"
+  style="background-image: url('{{ $header | relURL }}')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
