@@ -1,20 +1,19 @@
 ---
-title: "Leonardo Vignoli a GEO (Rai 3) – Progetto LIFE Eolizard"
-subtitle: ""
-description: "Intervento del Prof. Leonardo Vignoli sul progetto LIFE Eolizard"
+title: "Geo – LIFE Eolizard Project"
+subtitle: "Leonardo Vignoli featured on Geo (Rai 3)"
 date: 2024-10-30
-author: "EcoLab"
+author: "LEC – Lab for Ecology & Conservation"
+draft: false
 image: "/img/home-bg.jpg"
-tags: ["media", "tv", "Life Eolizard"]
 categories: ["News"]
+tags: ["Rai 3", "Geo", "LIFE Eolizard"]
 type: "post"
+summary: " "
 ---
+Leonardo Vignoli took part in the TV programme **Geo**, broadcast on Rai 3,
+to talk about the **LIFE Eolizard** project.
 
-È disponibile su **RaiPlay** la puntata di *GEO* andata in onda il **30 ottobre 2024**.
+The programme is **in Italian**.
 
-**Minuto:** 1:06:38  
-**Ospite:** Prof. Leonardo Vignoli  
-**Tema:** Progetto LIFE Eolizard  
-
-👉 Guarda la puntata su RaiPlay:  
-https://www.raiplay.it/video/2024/10/Geo---Puntata-del-30102024-21f30f4d-c719-488d-8461-d2ca3bb973e6.html
+**Available on RaiPlay**  
+[starting at minute 1:06:38 of the episode aired on 30/10/2024](https://www.raiplay.it/video/2024/10/Geo---Puntata-del-30102024-21f30f4d-c719-488d-8461-d2ca3bb973e6.html)

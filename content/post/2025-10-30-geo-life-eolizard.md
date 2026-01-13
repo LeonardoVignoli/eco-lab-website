@@ -8,6 +8,7 @@ image: "/img/home-bg.jpg"
 categories: ["News"]
 tags: ["Rai 3", "Geo", "LIFE Eolizard"]
 type: "post"
+summary: " "
 ---
 
 Leonardo Vignoli ha partecipato alla trasmissione **Geo** su Rai 3

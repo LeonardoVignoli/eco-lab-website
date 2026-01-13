@@ -28,12 +28,14 @@
                     <li>
                        
                     {{ if not .Site.Params.omit_categories }}
-                        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-                        <li>
-                            <a href="{{ "categories/" | relLangURL }}{{ $name | urlize }}/">{{ $name }}</a>
-                        </li>
-                        {{ end }}
-                    {{ end }}
+                     {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                      {{ if ne $name "news" }}
+                      <li>
+                     <a href="{{ "categories/" | relLangURL }}{{ $name | urlize }}/">{{ $name }}</a>
+                     </li>
+                     {{ end }}
+                     {{ end }}
+                     {{ end }} 
                     
 
 		    {{ range .Site.Params.additional_menus }}
