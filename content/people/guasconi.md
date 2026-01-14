@@ -1,0 +1,13 @@
+---
+title: "Mirko Guasconi"
+role: "Dottorando"
+weight: 20
+image: "/img/people/guasconi.jpg"
+---
+
+
+
+Dottorando specializzato in ecologia ed evoluzione, con particolare attenzione ai processi che agiscono in ambienti insulari.
+La sua ricerca si concentra principalmente su specie di lacertidi, utilizzate come modello per indagare come l’insularità influenzi la morfologia, la morfometria, la dieta e le performance funzionali di questi animali.
+Attraverso un approccio integrato che combina lavoro sul campo, analisi morfometriche e metodi statistici, studia i meccanismi ecologici ed evolutivi alla base delle differenze fenotipiche tra popolazioni.
+Il suo obiettivo è contribuire alla comprensione dei processi adattativi che operano negli ecosistemi insulari e del loro ruolo nella strutturazione della variabilità biologica.

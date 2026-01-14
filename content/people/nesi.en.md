@@ -7,9 +7,7 @@ image: "/img/people/nesi.jpg"
 
 
 
-Postdoctoral researcher focusing on animal tracking and movement ecology, with experience
-
-in the use of biologging technologies to study spatial behaviour in vertebrates.
+Researcher in zoology specializing in the study of movement and spatial behaviour of vertebrates, with a particular focus on amphibians and reptiles. Her research integrates biologging and animal tracking techniques, including VHF radiotelemetry, accelerometers, magnetometers, and GPS devices, to investigate habitat use, activity patterns, and behavioural responses to monitoring tools. Her work aims to generate knowledge applicable to the conservation and management of natural populations.
 
 
 
