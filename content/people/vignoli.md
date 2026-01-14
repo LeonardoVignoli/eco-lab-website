@@ -1,29 +1,15 @@
 ---
 title: "Leonardo Vignoli"
-role: "Responsabile del laboratorio — Professore Associato di Zoologia"
-weight: 10
-image: "/img/people/vignoli.jpg"
+role: "Responsabile del laboratorio — Prof. Associato di Zoologia"
+weight: 1
+image: "/img/people/vignoli1.jpg"
 email: "leonardo.vignoli@uniroma3.it"
 ---
 
 
-Leonardo Vignoli è Professore Associato di Zoologia presso l’Università Roma Tre e
+Sono Professore Associato di Zoologia presso l’Università Roma Tre e responsabile del laboratorio LEC. La mia attività di ricerca è focalizzata sull’ecologia di anfibi e rettili, con particolare attenzione alla dinamica di popolazione, all’ecologia comportamentale, all’ecologia funzionale e alla biologia della conservazione.
 
-responsabile del laboratorio LEC.
-
-
-
-La sua attività di ricerca è focalizzata sull’ecologia di anfibi e rettili, con particolare
-
-attenzione alla dinamica di popolazione, all’ecologia comportamentale, all’ecologia
-
-funzionale e alla biologia della conservazione.
-
-
-
-È coinvolto in progetti di conservazione in situ ed ex situ, programmi di monitoraggio a
-
-lungo termine e nello sviluppo di approcci innovativi come biologging ed eDNA.
+Sono coinvolto in progetti di conservazione sia in situ che ex situ, in programmi di monitoraggio a lungo termine e nello sviluppo e nell’applicazione di approcci innovativi per lo studio e la tutela della biodiversità, tra cui il biologging e l’analisi di DNA ambientale (eDNA). Il mio lavoro mira a integrare ricerca di base e applicata per supportare strategie efficaci di conservazione e gestione delle specie e degli ecosistemi naturali.
 
 
 

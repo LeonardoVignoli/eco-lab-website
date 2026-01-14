@@ -17,7 +17,7 @@ header_image: "/img/headers/people.jpg"
 ## PhD students
 
 - [**Mirko Guasconi**](./guasconi) — lizard ecology  
-- [**Aikaterini Sioumpoura**](./sioumpoura) — lizard functional ecology  
+- [**Katerina Sioumpoura**](./sioumpoura) — lizard functional ecology  
 - [**Fabrizio Calò**](./calo) — methods in ecology  
 - [**Riccardo Scalera**](./scalera) — conservation policy, IAS management  
 
