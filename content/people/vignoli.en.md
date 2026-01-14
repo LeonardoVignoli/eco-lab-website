@@ -1,6 +1,6 @@
 ---
 title: "Leonardo Vignoli"
-role: "Principal Invetsigator — Associate Prof. of Zoology"
+role: "Principal Invetsigator"
 weight: 1
 image: "/img/people/vignoli1.jpg"
 email: "leonardo.vignoli@uniroma3.it"
