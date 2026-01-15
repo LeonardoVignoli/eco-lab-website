@@ -19,7 +19,7 @@ header_image: "/img/headers/people.jpg"
 - [**Fabrizio Calò**](./calo) — methods in ecology  
 - [**Riccardo Scalera**](./scalera) — conservation policy, IAS management  
 
-## Tecnico
+## Collaboratori esterni
 
 - [**Matteo Guidotti**](./guidotti) — bird ecology, conservation biology
-
+- [**Cecilia Roscetti**](./roscetti) — thermal ecology
