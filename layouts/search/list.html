@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="container">
+  <h1>Search</h1>
+
+  <input
+    id="search-input"
+    type="search"
+    placeholder="Search…"
+    class="form-control"
+    style="max-width:400px; margin-bottom:20px;"
+  >
+
+  <ul id="search-results"></ul>
+</div>
+
+<script src="{{ "js/search.js" | relURL }}"></script>
+{{ end }}
+

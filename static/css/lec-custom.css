@@ -50,5 +50,48 @@ body.research header.intro-header{
   background-position: center 50% !important; /* prova 0%–100% */
 }
 
+/* Contenitore della gallery */
+.gallery-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
 
+/* Contenitore scorrevole delle immagini */
+.gallery-container {
+  display: flex;           /* Affianca le immagini */
+  gap: 10px;               /* Spazio tra le immagini */
+  overflow-x: auto;        /* Abilita lo scroll orizzontale */
+  scroll-behavior: smooth; /* Scroll fluido */
+}
 
+/* Stile immagini */
+.gallery-container img {
+  flex: 0 0 auto;           /* Non si ridimensionano in automatico */
+  width: 300px;             /* Larghezza fissa */
+  height: 200px;            /* Altezza fissa */
+  object-fit: cover;        /* Taglia l'immagine senza deformarla */
+  border-radius: 5px;       /* Bordi arrotondati opzionali */
+}
+
+/* Pulsanti */
+.gallery-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.gallery-button.left {
+  left: 0;
+}
+
+.gallery-button.right {
+  right: 0;
+}

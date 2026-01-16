@@ -1,0 +1,10 @@
+<div class="gallery-wrapper">
+  <button class="gallery-button left">&#10094;</button>
+  <div class="gallery-container">
+    {{ $images := readDir (printf "static/%s" (.Get "folder")) }}
+    {{ range $images }}
+      <img src="/{{ $.Get "folder" }}/{{ .Name }}" alt="">
+    {{ end }}
+  </div>
+  <button class="gallery-button right">&#10095;</button>
+</div>

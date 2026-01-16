@@ -1,0 +1,13 @@
+<div class="gallery-container">
+  <button class="scroll-btn left" onclick="scrollGallery(this)">&#10094;</button>
+  <div class="gallery-scroll">
+    {{ $images := readDir (printf "static/%s" .Get "folder") }}
+    {{ range $images }}
+      <a href="{{ printf "/%s/%s" $.Get "folder" .Name }}" target="_blank">
+        <img src="{{ printf "/%s/%s" $.Get "folder" .Name }}" alt="{{ .Name }}">
+      </a>
+    {{ end }}
+  </div>
+  <button class="scroll-btn right" onclick="scrollGallery(this)">&#10095;</button>
+</div>
+
