@@ -1,13 +1,19 @@
-<div class="gallery-container">
-  <button class="scroll-btn left" onclick="scrollGallery(this)">&#10094;</button>
-  <div class="gallery-scroll">
-    {{ $images := readDir (printf "static/%s" .Get "folder") }}
-    {{ range $images }}
-      <a href="{{ printf "/%s/%s" $.Get "folder" .Name }}" target="_blank">
-        <img src="{{ printf "/%s/%s" $.Get "folder" .Name }}" alt="{{ .Name }}">
-      </a>
-    {{ end }}
+<div class="lec-gallery">
+  <div class="gallery-wrapper">
+    <button class="gallery-button left">‹</button>
+
+    <div class="gallery-container">
+      {{ $folder := .Get "folder" }}
+      {{ $path := printf "static/%s" $folder }}
+
+      {{ range (readDir $path) }}
+        {{ if not .IsDir }}
+<img class="gallery-img" src="{{ printf "/%s/%s" $folder .Name | relURL }}" alt="">
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <button class="gallery-button right">›</button>
   </div>
-  <button class="scroll-btn right" onclick="scrollGallery(this)">&#10095;</button>
 </div>
 

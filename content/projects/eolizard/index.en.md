@@ -16,6 +16,4 @@ natural and human-modified environments.
 
 ## Gallery
 
-{{< gallery-preview
-    folder="img/projects/eolizard"
-    link="/projects/eolizard/gallery/">}}
+{{< gallery folder="img/projects/eolizard" >}}

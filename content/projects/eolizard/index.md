@@ -16,6 +16,4 @@ di sauri in ambienti naturali e antropizzati.
 
 ## Galleria
 
-{{< gallery-preview
-    folder="img/projects/eolizard"
-    link="/projects/eolizard/gallery/">}}
+{{< gallery folder="img/projects/eolizard" >}}

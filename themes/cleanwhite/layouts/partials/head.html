@@ -63,7 +63,6 @@
 
     <!-- Clean White theme CSS -->
     <link rel="stylesheet" href="{{ "css/hugo-theme-cleanwhite.min.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/lec-custom.css" | relURL }}">
 
 
     <!-- zangshang CSS -->
@@ -101,6 +100,14 @@
     <script src="{{ . | absURL }}"></script>
     {{ end }}
 
+<!-- Custom CSS -->
+{{ range .Site.Params.custom_css -}}
+<link rel="stylesheet" href="{{ . | absURL }}">
+{{- end }}
+
+<!-- LEC CUSTOM: SEMPRE PER ULTIMO -->
+<link rel="stylesheet" href="{{ "css/lec-custom.css" | relURL }}">
+  
 </head>
 
 {{ if .Site.Config.Services.GoogleAnalytics.ID }}

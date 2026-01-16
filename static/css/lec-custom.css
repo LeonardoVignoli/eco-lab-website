@@ -50,32 +50,44 @@ body.research header.intro-header{
   background-position: center 50% !important; /* prova 0%–100% */
 }
 
-/* Contenitore della gallery */
-.gallery-wrapper {
+
+/* =========================
+   GALLERY – OVERRIDE CLEANWHITE
+   ========================= */
+
+.lec-gallery {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.lec-gallery .gallery-wrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 
-/* Contenitore scorrevole delle immagini */
-.gallery-container {
-  display: flex;           /* Affianca le immagini */
-  gap: 10px;               /* Spazio tra le immagini */
-  overflow-x: auto;        /* Abilita lo scroll orizzontale */
-  scroll-behavior: smooth; /* Scroll fluido */
+.lec-gallery .gallery-container {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
-/* Stile immagini */
-.gallery-container img {
-  flex: 0 0 auto;           /* Non si ridimensionano in automatico */
-  width: 300px;             /* Larghezza fissa */
-  height: 200px;            /* Altezza fissa */
-  object-fit: cover;        /* Taglia l'immagine senza deformarla */
-  border-radius: 5px;       /* Bordi arrotondati opzionali */
+.lec-gallery .gallery-container img {
+  flex: 0 0 auto !important;
+  width: 300px !important;
+  height: 200px !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: cover !important;
+  display: block !important;
+  border-radius: 5px;
 }
 
 /* Pulsanti */
-.gallery-button {
+.lec-gallery .gallery-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -88,10 +100,47 @@ body.research header.intro-header{
   font-size: 20px;
 }
 
-.gallery-button.left {
-  left: 0;
+.lec-gallery .gallery-button.left { left: 0; }
+.lec-gallery .gallery-button.right { right: 0; }
+
+/* Neutralizza margini del tema */
+.lec-gallery p,
+.lec-gallery figure {
+  margin: 0 !important;
+
 }
 
-.gallery-button.right {
-  right: 0;
+/* =========================
+   ISOLAMENTO TOTALE GALLERY
+   ========================= */
+
+/* Impedisce al tema di toccare le immagini della gallery */
+.post-content .lec-gallery img,
+.article-content .lec-gallery img {
+  max-width: none !important;
+  height: 200px !important;
+  width: 300px !important;
+  display: block !important;
+}
+
+/* Forza layout orizzontale anche dopo reload */
+.post-content .lec-gallery .gallery-container {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+}
+
+/* 🔒 ISOLAMENTO TOTALE DAL TEMA CLEANWHITE */
+.post-content img:not(.gallery-img),
+.article-content img:not(.gallery-img) {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Gallery: nessuna interferenza JS */
+.gallery-img {
+  max-width: none !important;
+  width: 300px !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  display: block !important;
 }
