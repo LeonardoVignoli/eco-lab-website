@@ -1,6 +1,6 @@
 ---
 title: "Matteo Guidotti"
-role: "Collaboratore esterno"
+role: "Ex-Collaboratore"
 weight: 9
 image: "/img/people/guidotti1.jpg"
 ---

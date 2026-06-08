@@ -1,5 +1,5 @@
 {{ define "main" }}
-<header class="intro-header">
+<header class="intro-header people-header">
   <div class="container">
     <h1>{{ .Title }}</h1>
     {{ with .Params.role }}<p style="margin:0; opacity:.85;">{{ . }}</p>{{ end }}
@@ -17,5 +17,27 @@
   <article class="post-content">
     {{ .Content }}
   </article>
+
+  {{ $personSlug := .File.ContentBaseName }}
+  {{ $projects := slice }}
+  {{ range where .Site.RegularPages "Section" "projects" }}
+    {{ $project := . }}
+    {{ range .Params.people }}
+      {{ if eq .slug $personSlug }}
+        {{ $projects = $projects | append $project }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ with $projects }}
+    <section class="person-projects">
+      <h2>{{ if eq $.Language.Lang "it" }}Progetti{{ else }}Projects{{ end }}</h2>
+      <div class="person-projects-list">
+        {{ range sort . "Title" }}
+          <a href="{{ .RelPermalink }}">{{ with .Params.titleHtml }}{{ . | safeHTML }}{{ else }}{{ .Title }}{{ end }}</a>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
 </div>
 {{ end }}

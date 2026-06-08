@@ -1,6 +1,6 @@
 ---
 title: "Benedetta Gambioli"
-role: "Post-doc"
+role: "Ex-Collaboratrice"
 weight: 3
 image: "/img/people/gambioli1.jpg"
 ---

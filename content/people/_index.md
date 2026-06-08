@@ -9,7 +9,6 @@ header_image: "/img/headers/people.jpg"
 ## Post-doc
 
 - [**Priscilla Nesi**](./nesi) — animal tracking  
-- [**Benedetta Gambioli**](./gambioli) — herpetology, lizard ecology and conservation  
 - [**Claudio Pardo**](./pardo) — ecotoxicology, functional ecology  
 
 ## Dottorandi
@@ -21,5 +20,9 @@ header_image: "/img/headers/people.jpg"
 
 ## Collaboratori esterni
 
-- [**Matteo Guidotti**](./guidotti) — bird ecology, conservation biology
 - [**Cecilia Roscetti**](./roscetti) — thermal ecology
+
+## Ex-Collaboratori
+
+- [**Matteo Guidotti**](./guidotti) — bird ecology, conservation biology
+- [**Benedetta Gambioli**](./gambioli) — herpetology, lizard ecology and conservation

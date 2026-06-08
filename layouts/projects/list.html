@@ -10,7 +10,7 @@
 
         <div class="project-row">
           <h2 class="project-title">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}">{{ with .Params.titleHtml }}{{ . | safeHTML }}{{ else }}{{ .Title }}{{ end }}</a>
           </h2>
 
           {{ with .Summary }}
@@ -25,4 +25,3 @@
 
 </div>
 {{ end }}
-

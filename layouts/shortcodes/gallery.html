@@ -1,19 +1,51 @@
-<div class="lec-gallery">
-  <div class="gallery-wrapper">
-    <button class="gallery-button left">‹</button>
+{{ $folder := .Get "folder" }}
+{{ $path := printf "static/%s" $folder }}
+{{ $limit := int (.Get "limit" | default 0) }}
+{{ $galleryURL := .Get "galleryUrl" }}
+{{ $images := slice }}
+{{ range (readDir $path) }}
+  {{ if not .IsDir }}
+    {{ $images = $images | append . }}
+  {{ end }}
+{{ end }}
+{{ $visibleImages := $images }}
+{{ if and (gt $limit 0) (gt (len $images) $limit) }}
+  {{ $visibleImages = first $limit $images }}
+{{ end }}
 
-    <div class="gallery-container">
-      {{ $folder := .Get "folder" }}
-      {{ $path := printf "static/%s" $folder }}
-
-      {{ range (readDir $path) }}
-        {{ if not .IsDir }}
-<img class="gallery-img" src="{{ printf "/%s/%s" $folder .Name | relURL }}" alt="">
-        {{ end }}
-      {{ end }}
-    </div>
-
-    <button class="gallery-button right">›</button>
+<div class="lec-gallery{{ if $galleryURL }} gallery-preview{{ end }}" data-gallery>
+  <div class="gallery-heading">
+    <p>{{ if eq .Page.Language.Lang "it" }}Immagini dal progetto{{ else }}Images from the project{{ end }}</p>
+    <span>{{ len $images }} {{ if eq .Page.Language.Lang "it" }}fotografie{{ else }}photos{{ end }}</span>
   </div>
-</div>
+  <div class="gallery-grid">
+    {{ range $index, $image := $visibleImages }}
+      {{ $src := printf "/%s/%s" $folder $image.Name | relURL }}
+      <button class="gallery-item{{ if eq $index 0 }} gallery-item-featured{{ end }}"
+              type="button"
+              data-gallery-index="{{ $index }}"
+              aria-label="{{ if eq $.Page.Language.Lang "it" }}Apri fotografia{{ else }}Open photo{{ end }} {{ add $index 1 }} {{ if eq $.Page.Language.Lang "it" }}di{{ else }}of{{ end }} {{ len $visibleImages }}">
+        <img class="gallery-img" src="{{ $src }}" alt="" loading="lazy" decoding="async">
+      </button>
+    {{ end }}
+  </div>
 
+  {{ with $galleryURL }}
+    <div class="gallery-more">
+      <a href="{{ . | relLangURL }}">
+        {{ if eq $.Page.Language.Lang "it" }}Vedi tutta la galleria{{ else }}View full gallery{{ end }}
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  {{ end }}
+
+  <dialog class="gallery-lightbox" aria-label="{{ if eq .Page.Language.Lang "it" }}Visualizzatore immagini{{ else }}Image viewer{{ end }}">
+    <button class="gallery-lightbox-close" type="button" aria-label="{{ if eq .Page.Language.Lang "it" }}Chiudi{{ else }}Close{{ end }}">×</button>
+    <button class="gallery-lightbox-nav gallery-lightbox-prev" type="button" aria-label="{{ if eq .Page.Language.Lang "it" }}Fotografia precedente{{ else }}Previous photo{{ end }}">‹</button>
+    <figure>
+      <img src="" alt="">
+      <figcaption></figcaption>
+    </figure>
+    <button class="gallery-lightbox-nav gallery-lightbox-next" type="button" aria-label="{{ if eq .Page.Language.Lang "it" }}Fotografia successiva{{ else }}Next photo{{ end }}">›</button>
+  </dialog>
+</div>

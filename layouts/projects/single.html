@@ -1,10 +1,20 @@
 {{ define "main" }}
 <div class="container">
 
-  <h1>{{ .Title }}</h1>
+  <h1>{{ with .Params.titleHtml }}{{ . | safeHTML }}{{ else }}{{ .Title }}{{ end }}</h1>
 
   {{ .Content }}
 
+  {{ with .Params.people }}
+    <section class="project-people">
+      <h2>{{ if eq $.Language.Lang "it" }}Persone coinvolte{{ else }}People involved{{ end }}</h2>
+      <div class="project-people-list">
+        {{ range . }}
+          <a href="{{ printf "people/%s/" .slug | relLangURL }}">{{ .name }}</a>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
 </div>
 {{ end }}
-
