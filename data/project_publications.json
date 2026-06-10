@@ -1,0 +1,50 @@
+{
+  "bombina": [
+    {"authors":"de Meis S., Bissattini A.M., Venchi A., Bologna M.A. & Vignoli L.","year":2022,"title":"Feeding ecology of the endangered Apennine Yellow-bellied Toad (Bombina pachypus) in central Italy","journal":"Canadian Journal of Zoology","url":"https://doi.org/10.1139/cjz-2021-0186"},
+    {"authors":"Mirone A., Giovacchini P., Bologna M.A., Bruno D., Caprotti M., Di Febbraro M., Jamwal P., Monaco A., Ramazzotti F., Vignoli L., Galimberti A. & Loy A.","year":2024,"title":"New eDNA-based insights for the detection of endemic and endangered Apennine yellow-bellied toad and its pathogenic fungus Batrachochytrium dendrobatidis","journal":"Amphibia-Reptilia","url":"https://doi.org/10.1163/15685381-bja10208"}
+  ],
+  "edna": [
+    {"authors":"Mirone A., Giovacchini P., Bologna M.A., Bruno D., Caprotti M., Di Febbraro M., Jamwal P., Monaco A., Ramazzotti F., Vignoli L., Galimberti A. & Loy A.","year":2024,"title":"New eDNA-based insights for the detection of endemic and endangered Apennine yellow-bellied toad and its pathogenic fungus Batrachochytrium dendrobatidis","journal":"Amphibia-Reptilia","url":"https://doi.org/10.1163/15685381-bja10208"}
+  ],
+  "eolizard": [
+    {"authors":"Gambioli B., Macale D. & Vignoli L.","year":2024,"title":"Seasonal Phenotypic Variation in the Aeolian Wall Lizard, Podarcis raffonei, of the Capo Grosso (Vulcano) Population","journal":"Diversity","url":"https://doi.org/10.3390/d16080485"},
+    {"authors":"Ficetola G.F., Silva-Rocha I., Carretero M.A., Vignoli L., Sacchi R., Melotto A., Scali S. & Salvi D.","year":2021,"title":"Status of the largest extant population of the critically endangered Aeolian lizard Podarcis raffonei (Capo Grosso, Vulcano island)","journal":"PLOS ONE","url":"https://doi.org/10.1371/journal.pone.0253631"},
+    {"authors":"Mendoza-Roldan J.A., Ricci G., Gambioli B., Sioumpoura K., Di Palma A., Montinaro G., Macale D., Vignoli L., Beugnet F. & Otranto D.","year":2026,"title":"Saving a species, one mite at a time: efficacy of afoxolaner against Macronyssidae mites in the critically endangered Aeolian wall lizard (Podarcis raffonei)","journal":"International Journal for Parasitology: Parasites and Wildlife","url":"https://doi.org/10.1016/j.ijppaw.2026.101245"},
+    {"authors":"Berrilli E., Gambioli B., Bombi P., Garzia M., Muraro M., Pardo C., Reale S., Sherpa S., Ficetola G.F., Vignoli L. & Salvi D.","year":2024,"title":"Subspecies inflation hampers conservation efforts: a case study on wall lizards","journal":"Biological Journal of the Linnean Society","url":"https://doi.org/10.1093/biolinnean/blae001"},
+    {"authors":"Bombi P., Vignoli L., Scalera R. & Bologna M.A.","year":2005,"title":"Food habits of Podarcis filfolensis on a small Mediterranean island during the dry season","journal":"Amphibia-Reptilia","url":"https://doi.org/10.1163/156853805774408694"}
+  ],
+  "euproctus": [
+    {"authors":"Vignoli L., Macale D., Luiselli L., Lecis R. & Casula P.","year":2016,"title":"Are conservation assessments of threatened species reliable? Updated distribution of the Endangered Sardinian newt Euproctus platycephalus and implications for Red List assessments of Italian amphibians","journal":"Oryx","url":"https://doi.org/10.1017/S0030605315001416"}
+  ],
+  "invasive": [
+    {"authors":"Bissattini A.M. & Vignoli L.","year":2017,"title":"Let's eat out, there's crayfish for dinner: American bullfrog niche shifts inside and outside native ranges and the effect of introduced crayfish","journal":"Biological Invasions","url":"https://doi.org/10.1007/s10530-017-1473-6"},
+    {"authors":"Bissattini A.M., Buono V. & Vignoli L.","year":2018,"title":"Field data and worldwide literature review reveal that alien crayfish mitigate the predation impact of the American bullfrog on native amphibians","journal":"Aquatic Conservation: Marine and Freshwater Ecosystems","url":"https://doi.org/10.1002/aqc.2978"},
+    {"authors":"Bissattini A.M., Buono V. & Vignoli L.","year":2019,"title":"Disentangling the trophic interactions between American bullfrogs and native anurans: Complications resulting from post-metamorphic ontogenetic niche shifts","journal":"Aquatic Conservation: Marine and Freshwater Ecosystems","url":"https://doi.org/10.1002/aqc.3023"},
+    {"authors":"Bissattini A.M., Buono V. & Vignoli L.","year":2020,"title":"Moonlight rather than moon phase influences activity and habitat use in an invasive amphibian predator and its native amphibian prey","journal":"Acta Oecologica","url":"https://doi.org/10.1016/j.actao.2020.103529"},
+    {"authors":"Di Santo M.P., Vignoli L., Carpaneto G.M. & Battisti C.","year":2017,"title":"Occurrence patterns of alien freshwater turtles in a large urban pond archipelago (Rome, Italy): Suggesting hypotheses on root causes","journal":"Lakes & Reservoirs","url":"https://doi.org/10.1111/lre.12164"}
+  ],
+  "popgen_urodele": [
+    {"authors":"Buono V., Galliani C., Mancini E., Davoli F., Mengoni C., Mucci N. & Vignoli L.","year":2018,"title":"An improved microsatellite panel to assess genetic variability of the Italian smooth newt (Lissotriton vulgaris meridionalis)","journal":"Journal of Genetics","url":"https://doi.org/10.1007/s12041-018-0934-8"},
+    {"authors":"Buono V., Bissattini A.M., Davoli F., Mengoni C., Mucci N. & Vignoli L.","year":2023,"title":"Fine-scale spatial genetic structure and dispersal among Italian smooth newt populations in a rural landscape","journal":"Scientific Reports","url":"https://doi.org/10.1038/s41598-023-47265-8"}
+  ],
+  "speleomantes": [
+    {"authors":"Vignoli L., Caldera F. & Bologna M.A.","year":2006,"title":"Trophic niche of cave populations of Speleomantes italicus","journal":"Journal of Natural History","url":"https://doi.org/10.1080/00222930600973598"},
+    {"authors":"Vignoli L., Caldera F. & Bologna M.A.","year":2008,"title":"Spatial niche of Speleomantes italicus in a subterranean system of Central Italy","journal":"Italian Journal of Zoology","url":"https://doi.org/10.1080/11250000701692729"}
+  ],
+  "spia": [
+    {"authors":"Pardo C., Bellati A., Polverino G. & Canestrelli D.","year":2024,"title":"The dark side of organic farming: Copper sulphate compromises the life history and behaviour of the walking stick insect, Bacillus rossius","journal":"Science of the Total Environment","url":"https://doi.org/10.1016/j.scitotenv.2024.173626"}
+  ],
+  "trophyspec": [
+    {"authors":"Simbula G., Bissattini A.M. & Vignoli L.","year":2022,"title":"Linking agricultural practices to lizard trophic behaviour: An ecological approach","journal":"Science of the Total Environment","url":"https://doi.org/10.1016/j.scitotenv.2022.154822"},
+    {"authors":"Vignoli L., Caldera F. & Bologna M.A.","year":2006,"title":"Trophic niche of cave populations of Speleomantes italicus","journal":"Journal of Natural History","url":"https://doi.org/10.1080/00222930600973598"},
+    {"authors":"Vignoli L. & Luiselli L.","year":2011,"title":"Dietary relationships among coexisting anuran amphibians: a worldwide quantitative review","journal":"Oecologia","url":"https://doi.org/10.1007/s00442-011-2204-9"},
+    {"authors":"Vignoli L., Bissattini A.M. & Luiselli L.","year":2016,"title":"Food partitioning and the evolution of non-randomly structured communities in tailed amphibians: a worldwide systematic review","journal":"Biological Journal of the Linnean Society","url":"https://doi.org/10.1111/bij.12906"},
+    {"authors":"Bissattini A.M., Buono V. & Vignoli L.","year":2019,"title":"Disentangling the trophic interactions between American bullfrogs and native anurans","journal":"Aquatic Conservation: Marine and Freshwater Ecosystems","url":"https://doi.org/10.1002/aqc.3023"}
+  ],
+  "wetland": [
+    {"authors":"Buono V., Bissattini A.M. & Vignoli L.","year":2019,"title":"Can a cow save a newt? The role of cattle drinking troughs in amphibian conservation","journal":"Aquatic Conservation: Marine and Freshwater Ecosystems","url":"https://doi.org/10.1002/aqc.3126"},
+    {"authors":"Cerini F., Bologna M.A. & Vignoli L.","year":2020,"title":"Nestedness-patterns of Odonata assemblages in artificial and natural aquatic habitats reveal the potential role of drinking troughs for aquatic insect conservation","journal":"Journal of Insect Conservation","url":"https://doi.org/10.1007/s10841-020-00234-2"},
+    {"authors":"Vignoli L., Bologna M.A. & Luiselli L.","year":2007,"title":"Seasonal patterns of activity and community structure in an amphibian assemblage at a pond network with variable hydrology","journal":"Acta Oecologica","url":"https://doi.org/10.1016/j.actao.2006.09.006"},
+    {"authors":"Bissattini A.M., D'Ambrosio A., Buono V., Bologna M.A. & Vignoli L.","year":2025,"title":"Home Is Where the Newts Are: Suitability of Artificial Aquatic Sites for the Italian Crested Newt in a Traditional Farming Landscape in Central Italy","journal":"Animal Conservation","url":"https://doi.org/10.1111/acv.70005"}
+  ]
+}

@@ -34,6 +34,7 @@ Tra il 2014 e il 2017 sono stati rilasciati complessivamente 67 giovani ululoni.
 - [Pubblicazione nel repository dell’Università Roma Tre](https://iris.uniroma3.it/handle/11590/396112)
 - [Ricerca e conservazione degli anfibi – AIGZOO](https://www.aigzoo.it/ricerca-e-conservazione/ricerca-anfibi/)
 
-## Galleria
+{{< publications project="bombina" >}}
 
-{{< gallery folder="img/projects/bombina" >}}
+## Galleria
+{{< gallery folder="img/projects/bombina" limit="5" galleryUrl="projects/bombina/gallery/" >}}

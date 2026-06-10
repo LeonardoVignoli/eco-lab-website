@@ -26,6 +26,7 @@ Studi condotti con la partecipazione di Leonardo Vignoli sul tritone punteggiato
 - [Fine-scale spatial genetic structure and dispersal among Italian smooth newt populations](https://www.nature.com/articles/s41598-023-47265-8)
 - [An improved microsatellite panel to assess genetic variability of the Italian smooth newt](https://iris.uniroma1.it/handle/11573/1278542)
 
-## Galleria
+{{< publications project="popgen_urodele" >}}
 
-{{< gallery folder="img/projects/popgen_urodele" >}}
+## Galleria
+{{< gallery folder="img/projects/popgen_urodele" limit="5" galleryUrl="projects/popgen_urodele/gallery/" >}}

@@ -34,6 +34,7 @@ A total of 67 young toads were released between 2014 and 2017. Monitoring throug
 - [Publication in the Roma Tre University repository](https://iris.uniroma3.it/handle/11590/396112)
 - [Amphibian research and conservation – AIGZOO](https://www.aigzoo.it/ricerca-e-conservazione/ricerca-anfibi/)
 
-## Gallery
+{{< publications project="bombina" >}}
 
-{{< gallery folder="img/projects/bombina" >}}
+## Gallery
+{{< gallery folder="img/projects/bombina" limit="5" galleryUrl="projects/bombina/gallery/" >}}

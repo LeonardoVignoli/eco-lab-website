@@ -1,0 +1,38 @@
+{{ $items := hugo.Data.eolizard_press }}
+{{ $visible := first 6 $items }}
+{{ $remaining := after 6 $items }}
+
+<section class="press-coverage">
+  <p class="press-coverage-intro">
+    {{ if eq .Page.Language.Lang "it" }}
+      Una selezione di articoli e servizi dedicati al progetto LIFE EOLIZARD.
+    {{ else }}
+      A selection of articles and broadcasts covering the LIFE EOLIZARD project.
+    {{ end }}
+  </p>
+
+  <div class="press-grid">
+    {{ range $visible }}
+      {{ partial "press-card.html" (dict "item" . "lang" $.Page.Language.Lang) }}
+    {{ end }}
+  </div>
+
+  {{ with $remaining }}
+    <details class="press-more">
+      <summary>
+        <span class="press-more-open">{{ if eq $.Page.Language.Lang "it" }}Mostra tutta la rassegna stampa{{ else }}Show all media coverage{{ end }}</span>
+        <span class="press-more-close">{{ if eq $.Page.Language.Lang "it" }}Mostra meno{{ else }}Show less{{ end }}</span>
+      </summary>
+      <div class="press-grid press-grid-more">
+        {{ range . }}
+          {{ partial "press-card.html" (dict "item" . "lang" $.Page.Language.Lang) }}
+        {{ end }}
+      </div>
+    </details>
+  {{ end }}
+
+  <p class="press-source">
+    {{ if eq .Page.Language.Lang "it" }}Rassegna stampa tratta dal{{ else }}Media coverage sourced from the{{ end }}
+    <a href="https://associazionetriton.it/progetti/life-eolizard-salvaguardia-lucertola-eolie/" target="_blank" rel="noopener">sito LIFE EOLIZARD di Triton ETS</a>.
+  </p>
+</section>

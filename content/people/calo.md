@@ -1,7 +1,7 @@
 ---
 title: "Fabrizio Calò"
 role: "Dottorando"
-weight: 7
+weight: 4
 image: "/img/people/calo.jpg"
 ---
 

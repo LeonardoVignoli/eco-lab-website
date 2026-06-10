@@ -128,7 +128,7 @@
                 sidebar-container">
 
                 <!-- Featured Tags -->
-                {{ if .Site.Params.featured_tags }}
+                {{ if and .Site.Params.featured_tags (eq .Section "post") }}
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>

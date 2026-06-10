@@ -1,0 +1,10 @@
+<a class="press-card" href="{{ .item.url | safeURL }}" target="_blank" rel="noopener">
+  <span class="press-card-image">
+    <img src="{{ .item.image | safeURL }}" alt="" loading="lazy" decoding="async">
+  </span>
+  <span class="press-card-body">
+    <strong>{{ .item.title }}</strong>
+    <small>{{ .item.description }}</small>
+    <span class="press-card-link">{{ if eq .lang "it" }}Apri l'articolo{{ else }}Open article{{ end }} ↗</span>
+  </span>
+</a>

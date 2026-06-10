@@ -1,7 +1,7 @@
 ---
 title: "Claudio Pardo"
 role: "Post-doc"
-weight: 4
+weight: 3
 image: "/img/people/pardo.jpg"
 ---
 

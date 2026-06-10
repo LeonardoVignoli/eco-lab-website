@@ -1,10 +1,9 @@
 ---
 title: "Cecilia Roscetti"
 role: "External collaborator"
-weight: 10
+weight: 8
 image: "/img/people/roscetti.jpg"
 ---
-
 
 
 

@@ -1,12 +1,11 @@
 {{ define "main" }}
-<header class="intro-header people-header">
-  <div class="container">
-    <h1>{{ .Title }}</h1>
-    {{ with .Content }}<div class="post-heading">{{ . }}</div>{{ end }}
-  </div>
-</header>
-
 <div class="container">
+  {{ with .Content }}
+    <div class="people-summary">
+      {{ . }}
+    </div>
+  {{ end }}
+
   <div class="row">
     {{ range .Pages.ByWeight }}
       <div class="col-md-4 col-sm-6" style="margin-bottom:24px;">

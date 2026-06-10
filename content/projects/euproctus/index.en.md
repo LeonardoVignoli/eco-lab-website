@@ -30,6 +30,7 @@ Surveys carried out between 2010 and 2015 documented 57 populations, considerabl
 - [EAZA Best Practice Guidelines](https://strapi.eaza.net/uploads/Euproctus_EAZA_best_practice_guidelines_2015_NV_1345c7f55f.pdf)
 - [Amphibian research and conservation – AIGZOO](https://www.aigzoo.it/ricerca-e-conservazione/ricerca-anfibi/)
 
-## Gallery
+{{< publications project="euproctus" >}}
 
-{{< gallery folder="img/projects/euproctus" >}}
+## Gallery
+{{< gallery folder="img/projects/euproctus" limit="5" galleryUrl="projects/euproctus/gallery/" >}}

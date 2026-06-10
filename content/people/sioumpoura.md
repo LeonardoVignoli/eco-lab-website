@@ -1,7 +1,7 @@
 ---
 title: "Katerina Sioumpoura"
 role: "Dottoranda"
-weight: 6
+weight: 7
 image: "/img/people/sioumpoura.jpg"
 ---
 

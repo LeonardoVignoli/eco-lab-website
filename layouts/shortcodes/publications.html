@@ -1,0 +1,11 @@
+{{ $project := .Get "project" }}
+{{ with index hugo.Data.project_publications $project }}
+<section class="project-publications">
+  <h2>{{ if eq $.Page.Language.Lang "it" }}Pubblicazioni{{ else }}Publications{{ end }}</h2>
+  <ul>
+    {{ range first 6 . }}
+      <li>{{ .authors }} ({{ .year }}). <a href="{{ .url }}">{{ .title }}</a>. <em>{{ .journal }}</em>.</li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

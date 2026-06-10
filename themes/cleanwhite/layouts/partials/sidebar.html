@@ -217,10 +217,11 @@
             {{ end }}
         </ul>
     </section>
-    {{ end }}
-    <!-- Featured Tags -->
-    {{ if .Site.Params.featured_tags }}
-    <section>
+	    {{ end }}
+	    <!-- Featured Tags -->
+	    {{ $isNewsCategory := and (eq .Kind "term") (eq (lower .Title) "news") }}
+	    {{ if and .Site.Params.featured_tags (or (eq .Section "post") $isNewsCategory) }}
+	    <section>
         <hr class="hidden-sm hidden-xs">
         <h5>FEATURED TAGS</h5>
         <div class="tags">

@@ -26,6 +26,7 @@ Research by Leonardo Vignoli and collaborators shows that traditional drinking t
 - [The role of drinking troughs in Odonata conservation](https://iris.uniroma3.it/handle/11590/363811)
 - [Can a cow save a newt? The role of cattle drinking troughs in amphibian conservation](https://agris.fao.org/search/en/providers/122535/records/65de211fb766d82b18fc425c)
 
-## Gallery
+{{< publications project="wetland" >}}
 
-{{< gallery folder="img/projects/wetland" >}}
+## Gallery
+{{< gallery folder="img/projects/wetland" limit="9" galleryUrl="projects/wetland/gallery/" >}}

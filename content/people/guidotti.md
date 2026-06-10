@@ -1,7 +1,7 @@
 ---
 title: "Matteo Guidotti"
 role: "Ex-Collaboratore"
-weight: 9
+weight: 10
 image: "/img/people/guidotti1.jpg"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Benedetta Gambioli"
 role: "Ex-Collaboratrice"
-weight: 3
+weight: 9
 image: "/img/people/gambioli1.jpg"
 ---
 

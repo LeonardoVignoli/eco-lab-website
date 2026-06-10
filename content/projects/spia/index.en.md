@@ -28,6 +28,7 @@ The project is funded under PRIN 2022 and NextGenerationEU.
 
 - [Roma Tre University PRIN 2022 project list](https://www.uniroma3.it/ricerca/opportunita-di-finanziamento/progetti-prin/elenco-prin-2022/)
 
-## Gallery
+{{< publications project="spia" >}}
 
-{{< gallery folder="img/projects/spia" >}}
+## Gallery
+{{< gallery folder="img/projects/spia" limit="5" galleryUrl="projects/spia/gallery/" >}}

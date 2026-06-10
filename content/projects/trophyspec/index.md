@@ -27,6 +27,7 @@ Le ricerche del gruppo di Roma Tre hanno affrontato questi temi in diversi verte
 - [Trophic niche of cave populations of *Speleomantes italicus*](https://www.tandfonline.com/doi/abs/10.1080/00222930600973598)
 - [Seasonal variation in the trophic niche of an Alpine newt population](https://iris.uniroma3.it/handle/11590/146277)
 
-## Galleria
+{{< publications project="trophyspec" >}}
 
-{{< gallery folder="img/projects/trophyspec" >}}
+## Galleria
+{{< gallery folder="img/projects/trophyspec" limit="5" galleryUrl="projects/trophyspec/gallery/" >}}

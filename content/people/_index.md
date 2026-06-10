@@ -13,10 +13,10 @@ header_image: "/img/headers/people.jpg"
 
 ## Dottorandi
 
-- [**Mirko Guasconi**](./guasconi) — lizard ecology  
-- [**Katerina Sioumpoura**](./sioumpoura) — lizard functional ecology  
 - [**Fabrizio Calò**](./calo) — methods in ecology  
+- [**Mirko Guasconi**](./guasconi) — lizard ecology
 - [**Riccardo Scalera**](./scalera) — conservation policy, IAS management  
+- [**Katerina Sioumpoura**](./sioumpoura) — lizard functional ecology
 
 ## Collaboratori esterni
 
@@ -24,5 +24,5 @@ header_image: "/img/headers/people.jpg"
 
 ## Ex-Collaboratori
 
-- [**Matteo Guidotti**](./guidotti) — bird ecology, conservation biology
 - [**Benedetta Gambioli**](./gambioli) — herpetology, lizard ecology and conservation
+- [**Matteo Guidotti**](./guidotti) — bird ecology, conservation biology

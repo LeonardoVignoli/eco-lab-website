@@ -1,9 +1,5 @@
 {{ define "main" }}
 <div class="container">
-
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-
   <div class="project-list">
     {{ range .RegularPages.ByTitle }}
       <article class="project-preview">

@@ -30,6 +30,7 @@ Le indagini condotte tra il 2010 e il 2015 hanno documentato 57 popolazioni, mol
 - [EAZA Best Practice Guidelines](https://strapi.eaza.net/uploads/Euproctus_EAZA_best_practice_guidelines_2015_NV_1345c7f55f.pdf)
 - [Ricerca e conservazione degli anfibi – AIGZOO](https://www.aigzoo.it/ricerca-e-conservazione/ricerca-anfibi/)
 
-## Galleria
+{{< publications project="euproctus" >}}
 
-{{< gallery folder="img/projects/euproctus" >}}
+## Galleria
+{{< gallery folder="img/projects/euproctus" limit="5" galleryUrl="projects/euproctus/gallery/" >}}

@@ -1,9 +1,7 @@
 ---
 title: "Riccardo Scalera"
 role: "Dottorando"
-weight: 8
+weight: 6
 image: "/img/people/scalera.jpg"
 ---
-
-
 

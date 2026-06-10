@@ -28,6 +28,7 @@ Il progetto è finanziato nell’ambito PRIN 2022 e NextGenerationEU.
 
 - [Elenco PRIN 2022 dell’Università Roma Tre](https://www.uniroma3.it/ricerca/opportunita-di-finanziamento/progetti-prin/elenco-prin-2022/)
 
-## Galleria
+{{< publications project="spia" >}}
 
-{{< gallery folder="img/projects/spia" >}}
+## Galleria
+{{< gallery folder="img/projects/spia" limit="5" galleryUrl="projects/spia/gallery/" >}}

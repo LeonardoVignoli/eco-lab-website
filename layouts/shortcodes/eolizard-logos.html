@@ -1,0 +1,15 @@
+{{ $position := .Get "position" | default "footer" }}
+
+{{ if eq $position "hero" }}
+  <div class="eolizard-logo-hero">
+    <img src="{{ "img/projects/eolizard/logos/life-eolizard.png" | relURL }}"
+         alt="LIFE EOLIZARD">
+  </div>
+{{ else }}
+  <div class="eolizard-funding-logos" aria-label="{{ if eq .Page.Language.Lang "it" }}Programmi e reti che sostengono il progetto{{ else }}Programmes and networks supporting the project{{ end }}">
+    <img src="{{ "img/projects/eolizard/logos/natura-2000.webp" | relURL }}"
+         alt="Natura 2000">
+    <img src="{{ "img/projects/eolizard/logos/life-eu-cofunded.webp" | relURL }}"
+         alt="LIFE - Co-funded by the European Union">
+  </div>
+{{ end }}

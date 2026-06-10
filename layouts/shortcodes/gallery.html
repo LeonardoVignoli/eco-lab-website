@@ -3,8 +3,10 @@
 {{ $limit := int (.Get "limit" | default 0) }}
 {{ $galleryURL := .Get "galleryUrl" }}
 {{ $images := slice }}
+{{ $supportedExtensions := slice ".jpg" ".jpeg" ".png" ".webp" ".gif" ".avif" }}
 {{ range (readDir $path) }}
-  {{ if not .IsDir }}
+  {{ $extension := lower (path.Ext .Name) }}
+  {{ if and (not .IsDir) (in $supportedExtensions $extension) }}
     {{ $images = $images | append . }}
   {{ end }}
 {{ end }}

@@ -27,6 +27,7 @@ A study involving Leonardo Vignoli applied this approach in freshwater environme
 
 - [New eDNA-based insights for the detection of the Apennine yellow-bellied toad and its pathogenic fungus](https://iris.unimol.it/handle/11695/150869)
 
-## Gallery
+{{< publications project="edna" >}}
 
-{{< gallery folder="img/projects/edna" >}}
+## Gallery
+{{< gallery folder="img/projects/edna" limit="5" galleryUrl="projects/edna/gallery/" >}}

@@ -26,6 +26,7 @@ Studies involving Leonardo Vignoli on the Italian smooth newt, *Lissotriton vulg
 - [Fine-scale spatial genetic structure and dispersal among Italian smooth newt populations](https://www.nature.com/articles/s41598-023-47265-8)
 - [An improved microsatellite panel to assess genetic variability of the Italian smooth newt](https://iris.uniroma1.it/handle/11573/1278542)
 
-## Gallery
+{{< publications project="popgen_urodele" >}}
 
-{{< gallery folder="img/projects/popgen_urodele" >}}
+## Gallery
+{{< gallery folder="img/projects/popgen_urodele" limit="5" galleryUrl="projects/popgen_urodele/gallery/" >}}

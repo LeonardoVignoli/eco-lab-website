@@ -25,6 +25,7 @@ Le ricerche condotte da Leonardo Vignoli e collaboratori mostrano che gli abbeve
 - [Il ruolo degli abbeveratoi nella conservazione degli Odonati](https://iris.uniroma3.it/handle/11590/363811)
 - [Can a cow save a newt? The role of cattle drinking troughs in amphibian conservation](https://agris.fao.org/search/en/providers/122535/records/65de211fb766d82b18fc425c)
 
-## Galleria
+{{< publications project="wetland" >}}
 
-{{< gallery folder="img/projects/wetland" >}}
+## Galleria
+{{< gallery folder="img/projects/wetland" limit="9" galleryUrl="projects/wetland/gallery/" >}}

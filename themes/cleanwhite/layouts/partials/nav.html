@@ -59,8 +59,28 @@
   {{ end }}
 {{ end }}
 
-		            <li>
-                        <a href="{{ "search" | relURL }}"><i class="fa fa-search"></i></a>
+		            <li class="nav-search">
+                        <button class="nav-search-toggle"
+                                type="button"
+                                aria-label="{{ if eq .Site.Language.Lang "it" }}Cerca nel sito{{ else }}Search the site{{ end }}"
+                                aria-expanded="false"
+                                aria-controls="nav-search-panel">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                        <div id="nav-search-panel" class="nav-search-panel" hidden>
+                            <label class="sr-only" for="nav-search-input">
+                                {{ if eq .Site.Language.Lang "it" }}Cerca nel sito{{ else }}Search the site{{ end }}
+                            </label>
+                            <input id="nav-search-input"
+                                   type="search"
+                                   autocomplete="off"
+                                   data-lang="{{ .Site.Language.Lang }}"
+                                   placeholder="{{ if eq .Site.Language.Lang "it" }}Cerca...{{ else }}Search...{{ end }}">
+                            <div id="nav-search-results"
+                                 class="nav-search-results"
+                                 data-empty="{{ if eq .Site.Language.Lang "it" }}Nessun risultato{{ else }}No results{{ end }}"
+                                 aria-live="polite"></div>
+                        </div>
 		           </li>
                 </ul>
             </div>
