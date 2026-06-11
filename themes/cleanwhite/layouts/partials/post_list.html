@@ -1,43 +1,27 @@
-<!-- post list -->
-<div data-pagefind-ignore="all">
-{{ range $index, $element := $.Paginator.Pages }}
-<div class="post-preview">
-    <a href="{{ .Permalink }}">
-        <h2 class="post-title">
-            {{ .Title }}
-        </h2>
-	{{with .Params.subtitle }}
-        <h3 class="post-subtitle">
-            {{ . }}
-        </h3>
-	{{ end }}
-        <div class="post-content-preview">
-	{{ with .Description }}
-            {{ . }}
-        {{ else }}
-            {{ .Summary}}
-       {{ end }}
-        </div>
+<!-- News cards -->
+<div data-pagefind-ignore="all" class="news-grid">
+{{ range $.Paginator.Pages }}
+<article class="news-card">
+    <a class="news-card-image" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
+        <img src="{{ .Params.image | default "/img/home-bg.jpg" | relURL }}" alt="" loading="lazy">
     </a>
-    <p class="post-meta">
-    {{ if .Params.metadata }}
-        {{ range $index, $element := .Params.metadata }}
-            {{ if .link }}
-                <a href="{{ .link }}">{{ .text }}</a>
-            {{ else }}
-                {{ .text }}
+    <div class="news-card-body">
+        <time class="news-card-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+        <h2 class="news-card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        {{ with .Params.subtitle }}
+        <p class="news-card-subtitle">{{ . }}</p>
+        {{ end }}
+        {{ with .Params.tags }}
+        <div class="news-card-tags">
+            {{ range first 3 . }}
+            <span>{{ . }}</span>
             {{ end }}
+        </div>
         {{ end }}
-    {{ else }}
-        Posted by {{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }} on {{ .Date.Format "Monday, January 2, 2006" }}
-        <!-- Don't show "Last Modified on" if update happened on the same day. -->
-        {{ if (and (not .Lastmod.IsZero) (not (eq (dateFormat "2006-01-02" .Lastmod) (dateFormat "2006-01-02" .Date)))) }}
-            <br>Last Modified on {{ dateFormat "Monday, January 2, 2006" .Params.LastMod }} 
-        {{ end }}
-    {{ end }}
-    </p>
-
-</div>
-<hr>
+        <a class="news-card-link" href="{{ .RelPermalink }}">
+            {{ if eq .Language.Lang "it" }}Leggi la notizia{{ else }}Read the news{{ end }} <span aria-hidden="true">→</span>
+        </a>
+    </div>
+</article>
 {{ end }}
 </div>

@@ -4,7 +4,7 @@ subtitle: "Leonardo Vignoli ospite a Geo (Rai 3)"
 date: 2025-10-06
 author: "LEC – Lab for Ecology & Conservation"
 draft: false
-image: "/img/home-bg.jpg"
+image: "/img/projects/eolizard/IMG_5581 2.jpg"
 categories: ["News"]
 tags: ["TV", "Geo", "LIFE Eolizard"]
 type: "post"

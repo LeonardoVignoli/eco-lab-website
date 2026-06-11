@@ -3,22 +3,36 @@
   <div class="container">
     <h1>{{ .Title }}</h1>
     {{ with .Params.role }}<p style="margin:0; opacity:.85;">{{ . }}</p>{{ end }}
-    {{ with .Params.email }}<p style="margin:0;"><a href="mailto:{{ . }}">{{ . }}</a></p>{{ end }}
   </div>
 </header>
 
 <div class="container">
-  {{ with .Params.image }}
-    <div style="max-width:420px; margin:0 auto 18px;">
-      <img src="{{ . }}" alt="{{ $.Title }}" style="width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:16px;">
-    </div>
-  {{ end }}
-
-  <article class="post-content">
-    {{ .Content }}
-  </article>
-
   {{ $personSlug := .File.ContentBaseName }}
+  {{ $emails := dict
+    "vignoli" "leonardo.vignoli@uniroma3.it"
+    "nesi" "priscilla.nesi@uniroma3.it"
+    "pardo" "claudio.pardo@uniroma3.it"
+    "calo" "fabrizio.calo@uniroma3.it"
+    "guasconi" "mirko.guasconi@uniroma3.it"
+    "scalera" "riccardo.scalera@uniroma3.it"
+    "sioumpoura" "aikaterini.sioumpoura@uniroma3.it"
+    "roscetti" "cecilia.roscetti@uniroma2.it"
+    "gambioli" "benedetta.gambioli@uniroma3.it"
+    "guidotti" "matteo.guidotti@uniroma3.it"
+  }}
+  {{ $researchGate := dict
+    "vignoli" "https://www.researchgate.net/profile/Leonardo-Vignoli"
+    "nesi" "https://www.researchgate.net/profile/Priscilla-Nesi"
+    "pardo" "https://www.researchgate.net/profile/Claudio_Pardo"
+    "calo" "https://www.researchgate.net/profile/Fabrizio-Calo"
+    "guasconi" "https://www.researchgate.net/profile/Mirko-Guasconi"
+    "scalera" "https://www.researchgate.net/profile/Riccardo-Scalera"
+    "roscetti" "https://www.researchgate.net/profile/Cecilia-Roscetti"
+    "gambioli" "https://www.researchgate.net/profile/Benedetta-Gambioli"
+    "guidotti" "https://www.researchgate.net/profile/Matteo-Guidotti-5"
+  }}
+  {{ $email := .Params.email | default (index $emails $personSlug) }}
+  {{ $researchGateURL := index $researchGate $personSlug }}
   {{ $projects := slice }}
   {{ range where .Site.RegularPages "Section" "projects" }}
     {{ $project := . }}
@@ -29,15 +43,44 @@
     {{ end }}
   {{ end }}
 
-  {{ with $projects }}
-    <section class="person-projects">
-      <h2>{{ if eq $.Language.Lang "it" }}Progetti{{ else }}Projects{{ end }}</h2>
-      <div class="person-projects-list">
-        {{ range sort . "Title" }}
-          <a href="{{ .RelPermalink }}">{{ with .Params.titleHtml }}{{ . | safeHTML }}{{ else }}{{ .Title }}{{ end }}</a>
-        {{ end }}
-      </div>
-    </section>
-  {{ end }}
+  <div class="person-profile-layout">
+    <aside class="person-profile-sidebar">
+      {{ with .Params.image }}
+        <img class="person-profile-image" src="{{ . }}" alt="{{ $.Title }}">
+      {{ end }}
+
+      {{ if or $email $researchGateURL }}
+        <nav class="person-contacts" aria-label="{{ if eq .Language.Lang "it" }}Contatti e profili accademici{{ else }}Contacts and academic profiles{{ end }}">
+          {{ with $email }}
+            <a class="person-contact-button person-contact-email" href="mailto:{{ . }}">
+              {{ if eq $.Language.Lang "it" }}Scrivi una email{{ else }}Send an email{{ end }}
+            </a>
+          {{ end }}
+          {{ with $researchGateURL }}
+            <a class="person-contact-button person-contact-researchgate" href="{{ . }}" target="_blank" rel="noopener noreferrer">
+              ResearchGate
+            </a>
+          {{ end }}
+        </nav>
+      {{ end }}
+    </aside>
+
+    <div class="person-profile-main">
+      <article class="post-content">
+        {{ .Content }}
+      </article>
+
+      {{ with $projects }}
+        <section class="person-projects">
+          <h2>{{ if eq $.Language.Lang "it" }}Progetti{{ else }}Projects{{ end }}</h2>
+          <div class="person-projects-list">
+            {{ range sort . "Title" }}
+              <a href="{{ .RelPermalink }}">{{ with .Params.titleHtml }}{{ . | safeHTML }}{{ else }}{{ .Title }}{{ end }}</a>
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+    </div>
+  </div>
 </div>
 {{ end }}

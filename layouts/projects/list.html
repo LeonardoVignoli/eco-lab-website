@@ -1,23 +1,89 @@
 {{ define "main" }}
-<div class="container">
-  <div class="project-list">
+{{ $categories := dict
+  "bombina" "conservation"
+  "edna" "methods"
+  "eolizard" "conservation"
+  "euproctus" "conservation"
+  "invasive" "ecology"
+  "popgen_urodele" "genetics"
+  "speleomantes" "ecology"
+  "spia" "ecology"
+  "tracking" "methods"
+  "trophyspec" "ecology"
+  "wetland" "conservation"
+}}
+{{ $covers := dict
+  "bombina" "/img/projects/bombina/wetland-08.jpg"
+  "edna" "/img/projects/edna/edna-07.jpeg"
+  "eolizard" "/img/projects/eolizard/IMG_5581 2.jpg"
+  "spia" "/img/projects/spia/spia-01.jpg"
+  "tracking" "/img/projects/tracking/d69e7c07-71ae-4d47-b4c7-1fc6dd1c9465 2.JPG"
+  "wetland" "/img/projects/wetland/wetland-02.jpg"
+}}
+
+<div class="container projects-overview">
+  <div class="project-filters" role="group" aria-label="{{ if eq .Language.Lang "it" }}Filtra i progetti per tema{{ else }}Filter projects by topic{{ end }}">
+    <button type="button" class="project-filter is-active" data-project-filter="all">
+      {{ if eq .Language.Lang "it" }}Tutti{{ else }}All{{ end }}
+    </button>
+    <button type="button" class="project-filter" data-project-filter="conservation">
+      {{ if eq .Language.Lang "it" }}Conservazione{{ else }}Conservation{{ end }}
+    </button>
+    <button type="button" class="project-filter" data-project-filter="ecology">
+      {{ if eq .Language.Lang "it" }}Ecologia e monitoraggio{{ else }}Ecology and monitoring{{ end }}
+    </button>
+    <button type="button" class="project-filter" data-project-filter="methods">
+      {{ if eq .Language.Lang "it" }}Tecnologie e metodi{{ else }}Technology and methods{{ end }}
+    </button>
+    <button type="button" class="project-filter" data-project-filter="genetics">
+      {{ if eq .Language.Lang "it" }}Genetica{{ else }}Genetics{{ end }}
+    </button>
+  </div>
+
+  <div class="project-card-grid">
     {{ range .RegularPages.ByTitle }}
-      <article class="project-preview">
-
-        <div class="project-row">
-          <h2 class="project-title">
-            <a href="{{ .RelPermalink }}">{{ with .Params.titleHtml }}{{ . | safeHTML }}{{ else }}{{ .Title }}{{ end }}</a>
-          </h2>
-
-          {{ with .Summary }}
-            <p class="project-summary">{{ . }}</p>
-          {{ end }}
-        </div>
-
-         <hr>
+      {{ $slug := .File.ContentBaseName }}
+      {{ $category := index $categories $slug | default "ecology" }}
+      {{ $cover := index $covers $slug }}
+      <article class="project-card" data-project-category="{{ $category }}">
+        <a class="project-card-link" href="{{ .RelPermalink }}">
+          <div class="project-card-cover{{ if not $cover }} project-card-cover-placeholder{{ end }}">
+            {{ with $cover }}
+              <img src="{{ . | relURL }}" alt="" loading="lazy" decoding="async">
+            {{ end }}
+            <span class="project-card-topic">
+              {{ if eq $category "conservation" }}{{ if eq $.Language.Lang "it" }}Conservazione{{ else }}Conservation{{ end }}{{ end }}
+              {{ if eq $category "ecology" }}{{ if eq $.Language.Lang "it" }}Ecologia e monitoraggio{{ else }}Ecology and monitoring{{ end }}{{ end }}
+              {{ if eq $category "methods" }}{{ if eq $.Language.Lang "it" }}Tecnologie e metodi{{ else }}Technology and methods{{ end }}{{ end }}
+              {{ if eq $category "genetics" }}{{ if eq $.Language.Lang "it" }}Genetica{{ else }}Genetics{{ end }}{{ end }}
+            </span>
+          </div>
+          <div class="project-card-body">
+            <h2>{{ with .Params.titleHtml }}{{ . | safeHTML }}{{ else }}{{ .Title }}{{ end }}</h2>
+            {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+            <span class="project-card-action">
+              {{ if eq $.Language.Lang "it" }}Scopri il progetto{{ else }}Explore project{{ end }} <span aria-hidden="true">→</span>
+            </span>
+          </div>
+        </a>
       </article>
     {{ end }}
   </div>
-
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const filters = document.querySelectorAll("[data-project-filter]");
+  const cards = document.querySelectorAll("[data-project-category]");
+  filters.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const selected = button.dataset.projectFilter;
+      filters.forEach(function (item) { item.classList.toggle("is-active", item === button); });
+      cards.forEach(function (card) {
+        card.hidden = selected !== "all" && card.dataset.projectCategory !== selected;
+      });
+    });
+  });
+});
+</script>
 {{ end }}

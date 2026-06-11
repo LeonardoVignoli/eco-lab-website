@@ -198,6 +198,73 @@ body.research header.intro-header{
 .people-header .post-heading p,
 .people-header a { color: #111 !important; text-shadow: none !important; }
 
+/* People profile contacts */
+.person-profile-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 380px) minmax(0, 1fr);
+  align-items: start;
+  gap: 52px;
+  margin-bottom: 55px;
+}
+.person-profile-sidebar {
+  position: sticky;
+  top: 90px;
+}
+.person-profile-image {
+  display: block;
+  width: 100% !important;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.person-profile-main { min-width: 0; }
+.person-profile-main .post-content { padding-top: 0; }
+.person-profile-main .post-content > :first-child { margin-top: 0; }
+.person-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 14px 0 0;
+}
+.person-contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  padding: 10px 17px;
+  border: 1px solid #1d5b46;
+  border-radius: 4px;
+  color: #1d5b46 !important;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+.person-contact-button:hover,
+.person-contact-button:focus {
+  background: #1d5b46;
+  color: #fff !important;
+}
+.person-contact-researchgate {
+  border-color: #00a39a;
+  color: #007d76 !important;
+}
+.person-contact-researchgate:hover,
+.person-contact-researchgate:focus {
+  border-color: #00a39a;
+  background: #00a39a;
+}
+
+@media (max-width: 767px) {
+  .person-profile-layout { grid-template-columns: 1fr; gap: 28px; }
+  .person-profile-sidebar {
+    position: static;
+    width: min(100%, 420px);
+    margin: 0 auto;
+  }
+  .person-profile-main .post-content { text-align: left; }
+}
+
 /* Press coverage */
 .press-coverage { margin: 20px 0 55px; }
 .press-coverage-intro { max-width: 760px; color: #586b63; }
@@ -230,6 +297,104 @@ body.research header.intro-header{
   .press-card { min-height: 112px; grid-template-columns: 105px minmax(0, 1fr); }
   .press-card-image { width: 105px; height: 112px; padding: 13px; }
   .press-card-image img { max-width: 79px !important; max-height: 86px !important; }
+}
+
+/* News overview */
+.news-grid {
+  display: grid;
+  gap: 18px;
+  margin: 0 0 28px;
+}
+.news-card {
+  display: grid;
+  min-height: 190px;
+  grid-template-columns: 190px minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid #dce3df;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(20,55,43,.06);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.news-card:hover {
+  transform: translateY(-2px);
+  border-color: #9bb9ad;
+  box-shadow: 0 10px 26px rgba(20,55,43,.12);
+}
+.news-card-image {
+  display: block;
+  min-height: 190px;
+  overflow: hidden;
+  background: #edf2ef;
+}
+.news-card-image img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 190px;
+  object-fit: cover;
+  transition: transform .35s ease;
+}
+.news-card:hover .news-card-image img { transform: scale(1.035); }
+.news-card-body {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 18px 20px 16px;
+}
+.news-card-date {
+  margin-bottom: 5px;
+  color: #668076;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.news-card-title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.25;
+}
+.news-card-title a { color: #172d25; text-decoration: none !important; }
+.news-card-title a:hover { color: #1d5b46; }
+.news-card-subtitle {
+  margin: 7px 0 12px;
+  color: #586b63;
+  font-size: 14px;
+  line-height: 1.45;
+}
+.news-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+.news-card-tags span {
+  padding: 3px 7px;
+  border-radius: 20px;
+  background: #edf4f0;
+  color: #35644f;
+  font-size: 11px;
+  font-weight: 700;
+}
+.news-card-link {
+  align-self: flex-start;
+  margin-top: auto;
+  color: #1d5b46 !important;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+.news-card-link:hover { color: #123e2e !important; }
+
+@media (max-width: 600px) {
+  .news-card { min-height: 0; grid-template-columns: 112px minmax(0, 1fr); }
+  .news-card-image,
+  .news-card-image img { min-height: 165px; }
+  .news-card-body { padding: 13px 14px; }
+  .news-card-title { font-size: 16px; }
+  .news-card-subtitle { font-size: 12px; }
+  .news-card-tags { display: none; }
 }
 
 /* LIFE EOLIZARD project logos */
@@ -272,4 +437,144 @@ body.research header.intro-header{
   .eolizard-funding-logos { flex-direction: column; gap: 24px; padding: 24px 15px; }
   .eolizard-funding-logos img { max-width: min(100%, 260px) !important; }
   .eolizard-funding-logos img:first-child { max-width: 140px !important; }
+}
+
+/* Projects overview */
+.projects-overview { padding-bottom: 55px; }
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 4px 0 28px;
+}
+.project-filter {
+  padding: 8px 14px;
+  border: 1px solid #b9c8c1;
+  border-radius: 22px;
+  background: #fff;
+  color: #26483b;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+.project-filter:hover,
+.project-filter:focus,
+.project-filter.is-active {
+  border-color: #1d5b46;
+  background: #1d5b46;
+  color: #fff;
+}
+.project-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+.project-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #dce3df;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(22, 57, 44, .06);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+.project-card[hidden] { display: none; }
+.project-card:hover,
+.project-card:focus-within {
+  transform: translateY(-4px);
+  border-color: #9db8ac;
+  box-shadow: 0 14px 32px rgba(22, 57, 44, .14);
+}
+.project-card-link {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  color: #172d25 !important;
+  text-decoration: none !important;
+}
+.project-card-cover {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+  background: #dce8e1;
+}
+.project-card-cover img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+.project-card:hover .project-card-cover img { transform: scale(1.035); }
+.project-card-cover-placeholder {
+  background:
+    radial-gradient(circle at 78% 25%, rgba(215, 232, 220, .95), transparent 31%),
+    linear-gradient(140deg, #173f32, #4f846b);
+}
+.project-card-cover-placeholder::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 45%, rgba(255,255,255,.09) 45%, rgba(255,255,255,.09) 50%, transparent 50%);
+  background-size: 24px 24px;
+}
+.project-card-topic {
+  position: absolute;
+  z-index: 1;
+  top: 13px;
+  left: 13px;
+  padding: 6px 10px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.92);
+  color: #173f32;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+.project-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 18px 19px 19px;
+}
+.project-card-body h2 {
+  margin: 0 0 9px;
+  color: #173f32;
+  font-size: 20px;
+  line-height: 1.25;
+}
+.project-card-body p {
+  display: -webkit-box;
+  margin: 0 0 18px;
+  overflow: hidden;
+  color: #586b63;
+  font-size: 14px;
+  line-height: 1.55;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.project-card-action {
+  margin-top: auto;
+  color: #1d5b46;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+@media (max-width: 991px) {
+  .project-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 620px) {
+  .project-filters {
+    flex-wrap: nowrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 0 15px 5px;
+    overflow-x: auto;
+  }
+  .project-filter { flex: 0 0 auto; }
+  .project-card-grid { grid-template-columns: 1fr; gap: 16px; }
+  .project-card-cover { height: 205px; }
 }
