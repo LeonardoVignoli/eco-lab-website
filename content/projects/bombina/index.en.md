@@ -38,3 +38,7 @@ A total of 67 young toads were released between 2014 and 2017. Monitoring throug
 
 ## Gallery
 {{< gallery folder="img/projects/bombina" limit="5" galleryUrl="projects/bombina/gallery/" >}}
+
+## In the media...
+
+{{< bombina-press-coverage >}}

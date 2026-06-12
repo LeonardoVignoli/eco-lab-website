@@ -38,3 +38,7 @@ Tra il 2014 e il 2017 sono stati rilasciati complessivamente 67 giovani ululoni.
 
 ## Galleria
 {{< gallery folder="img/projects/bombina" limit="5" galleryUrl="projects/bombina/gallery/" >}}
+
+## Dicono di noi...
+
+{{< bombina-press-coverage >}}

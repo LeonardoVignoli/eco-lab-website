@@ -1,0 +1,17 @@
+{{ $items := hugo.Data.bombina_press }}
+
+<section class="press-coverage">
+  <p class="press-coverage-intro">
+    {{ if eq .Page.Language.Lang "it" }}
+      Servizi, interviste e approfondimenti dedicati alla conservazione dell’ululone appenninico.
+    {{ else }}
+      Broadcasts, interviews and articles about the conservation of the Apennine yellow-bellied toad.
+    {{ end }}
+  </p>
+
+  <div class="press-grid">
+    {{ range $items }}
+      {{ partial "press-card.html" (dict "item" . "lang" $.Page.Language.Lang) }}
+    {{ end }}
+  </div>
+</section>
