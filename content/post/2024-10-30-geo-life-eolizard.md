@@ -17,4 +17,4 @@ La puntata ha avuto come protagonista la **lucertola delle Eolie** (*Podarcis ra
 Alcune delle risposte sono arrivate dal progetto europeo **LIFE EOLIZARD**, cofinanziato dal programma LIFE dell’Unione Europea, che mira alla tutela di questa specie estremamente rara. In studio sono intervenuti **Leonardo Vignoli**, ecologo e coordinatore del progetto LIFE EOLIZARD, e **Giulia Luzi**, dottoressa forestale.
 
 **Disponibile su RaiPlay**  
-[minuto 1:06:38 della puntata del 30/10/2024](https://www.raiplay.it/video/2024/10/Geo---Puntata-del-30102024-21f30f4d-c719-488d-8461-d2ca3bb973e6.html)
+[minuto 1:06:35 della puntata del 30/10/2024](https://www.raiplay.it/video/2024/10/Geo---Puntata-del-30102024-21f30f4d-c719-488d-8461-d2ca3bb973e6.html#t=3995)
