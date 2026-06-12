@@ -4,7 +4,7 @@ subtitle: "Leonardo Vignoli guest on Unomattina (Rai 1)"
 date: 2025-09-04
 author: "LEC – Lab for Ecology & Conservation"
 draft: false
-image: "/img/projects/bombina/wetland-08.jpg"
+image: "/img/news/unomattina-estate.png"
 categories: ["News"]
 tags: ["TV", "Biodiversity", "Amphibians", "Reptiles", "Unomattina", "LIFE Eolizard"]
 type: "post"

@@ -310,15 +310,14 @@ body.research header.intro-header{
   min-height: 190px;
   grid-template-columns: 190px minmax(0, 1fr);
   overflow: hidden;
-  border: 1px solid #dce3df;
+  border: 0;
   border-radius: 7px;
   background: #fff;
   box-shadow: 0 4px 14px rgba(20,55,43,.06);
-  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  transition: transform .2s ease, box-shadow .2s ease;
 }
 .news-card:hover {
   transform: translateY(-2px);
-  border-color: #9bb9ad;
   box-shadow: 0 10px 26px rgba(20,55,43,.12);
 }
 .news-card-image {
@@ -332,7 +331,9 @@ body.research header.intro-header{
   width: 100% !important;
   height: 100% !important;
   min-height: 190px;
-  object-fit: cover;
+  padding: 20px;
+  object-fit: contain;
+  background: #fff;
   transition: transform .35s ease;
 }
 .news-card:hover .news-card-image img { transform: scale(1.035); }

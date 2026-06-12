@@ -4,7 +4,7 @@ subtitle: "Leonardo Vignoli featured on Geo (Rai 3)"
 date: 2024-10-30
 author: "LEC – Lab for Ecology & Conservation"
 draft: false
-image: "/img/projects/eolizard/IMG_5581 2.jpg"
+image: "/img/news/geo-rai3.png"
 categories: ["News"]
 tags: ["TV", "Geo", "LIFE Eolizard"]
 type: "post"
