@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://lec-lab.com/"
 title = "LEC - Lab for Ecology & Conservation"
 theme = "cleanwhite"
 languageCode = "it"
