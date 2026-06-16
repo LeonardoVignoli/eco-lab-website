@@ -1,39 +1,91 @@
 ---
-title: "Monitoring Sardinian geotritons"
-summary: "Development of monitoring protocols for *Speleomantes sarrabusensis* (CR) and other
-geotritons endemic to Sardinia."
+title: "Monitoring threatened Sardinian cave salamanders"
+summary: "Development of an effective monitoring protocol for *Speleomantes sarrabusensis* and other threatened Sardinian cave salamanders."
 draft: false
 people:
   - name: "Leonardo Vignoli"
     slug: "vignoli"
+  - name: "Fabrizio Calò"
+    slug: "calo"
 ---
+
+## Project profile
+
+**Project:** Monitoring threatened Sardinian cave salamanders
+
+**Acronym:** Sardinian Cave Salamanders Monitoring
+
+**Period:** 2023-2025
+
+**Status:** Ongoing / completion phase
 
 ## The project
 
-Sardinian geotritons are endemic amphibians closely associated with cool and humid environments, including caves, rock crevices, artificial cavities and limestone outcrops. Their often fragmented distribution, limited dispersal ability and strong dependence on microclimatic conditions make these species particularly sensitive to environmental change and climate change.
+The project aims to develop an improved and effective monitoring protocol for *Speleomantes sarrabusensis*, classified as Critically Endangered, and for other threatened Sardinian cave salamanders, including *Speleomantes supramontis* and *Speleomantes flavus*.
 
-The project aims to develop reliable protocols for monitoring Sardinian populations of the genus *Speleomantes*, with particular attention to *Speleomantes sarrabusensis*, an endemic species of south-eastern Sardinia classified as Critically Endangered.
+Sardinian cave salamanders are endemic amphibians restricted to isolated mountain areas, where they use subterranean habitats for breeding and sheltering, while also exploiting forest and Mediterranean maquis habitats during favourable periods. Despite their conservation relevance, several aspects of their ecology remain poorly known, especially their epigean activity outside caves.
 
-Research activities are based on repeated surveys of cavities and rocky habitats used by geotritons, together with measurements of temperature, humidity and habitat characteristics. Because the probability of observing individuals changes considerably throughout the year, monitoring design must account for seasonality and microclimatic conditions.
+The project includes field surveys under suitable seasonal and meteorological conditions, using repeated linear transects to estimate distribution, detectability, abundance and ecological requirements. The collected data will support site occupancy models and N-mixture models, contributing to a long-term monitoring protocol and future conservation planning.
 
-Studies co-authored by Leonardo Vignoli on *Speleomantes italicus* provide important ecological and methodological foundations that can be applied to the monitoring of Sardinian geotritons. This research showed that activity and occurrence inside cavities follow marked seasonal patterns, are influenced by temperature and humidity, and vary between areas close to cave entrances and deeper sectors.
+## Objectives
 
-## Aims
+- Clarify the actual distribution of the target species.
+- Estimate detectability and abundance in epigean habitats.
+- Identify ecological and environmental requirements.
+- Fill knowledge gaps on activity outside caves.
+- Develop a long-term monitoring protocol.
+- Support risk assessments and conservation actions.
 
-- define standardised and repeatable protocols for surveying Sardinian geotritons;
-- assess how temperature, humidity and seasonality influence individual detectability;
-- describe the use of different sectors of cavities and rocky habitats;
-- collect long-term data on population structure and trends;
-- identify the most vulnerable habitats and populations;
-- provide information supporting conservation assessments and protection measures.
+## Methods
 
-## Ecology and monitoring
+- Selection of survey sites.
+- Repeated linear transects.
+- Seasonal surveys under favourable weather conditions.
+- Occupancy models.
+- N-mixture models.
+- Demographic and spatial analyses.
 
-Research on the spatial niche of *Speleomantes italicus* identified a peak in activity between spring and summer and a relationship between observed abundance and thermal conditions. During summer, cavities may provide essential refuges when external conditions become incompatible with the physiological requirements of geotritons. Adults may also use areas closer to cave entrances more frequently when the external microclimate is favourable.
+## Target species
 
-Research on the trophic niche showed that subterranean populations can feed during much of the year, although feeding activity is discontinuous and linked to seasonal prey availability. Lower food availability inside cavities may result in a narrower trophic niche than in populations making greater use of surface habitats.
+- *Speleomantes sarrabusensis*
+- *Speleomantes supramontis*
+- *Speleomantes flavus*
 
-These findings indicate that counts conducted during a single season or under non-comparable microclimatic conditions may provide unrepresentative estimates. Monitoring Sardinian geotritons should therefore include repeated visits, systematic recording of environmental conditions and surveys conducted during comparable periods.
+## Geographic area
+
+Sardinia, Italy:
+
+- Monte dei Sette Fratelli
+- Supramonte / Gulf of Orosei
+- Monte Albo
+
+## Team and collaborations
+
+- Leonardo Vignoli
+- Fabrizio Calò
+- Pierluigi Bombi
+- Paolo Casula
+
+## Partners
+
+- Roma Tre University
+- CNR
+- Regional Forestry Agency for Land and Environmental Development of Sardinia (FoReSTAS)
+
+## Funding
+
+Mohamed bin Zayed Species Conservation Fund
+
+## Keywords
+
+- *Speleomantes*
+- Sardinian cave salamanders
+- amphibian conservation
+- monitoring protocol
+- occupancy models
+- N-mixture models
+- epigean activity
+- endangered amphibians
 
 {{< publications project="speleomantes" >}}
 

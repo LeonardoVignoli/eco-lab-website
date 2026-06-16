@@ -50,7 +50,7 @@
       {{ $slug := .File.ContentBaseName }}
       {{ $category := index $categories $slug | default "ecology" }}
       {{ $cover := index $covers $slug }}
-      <article class="project-card" data-project-category="{{ $category }}">
+      <article class="project-card project-card-{{ $slug }}" data-project-category="{{ $category }}">
         <a class="project-card-link" href="{{ .RelPermalink }}">
           <div class="project-card-cover{{ if not $cover }} project-card-cover-placeholder{{ end }}">
             {{ with $cover }}

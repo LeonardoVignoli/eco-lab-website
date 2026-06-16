@@ -1,39 +1,91 @@
 ---
-title: "Monitoraggio dei geotritoni sardi"
-summary: "Sviluppo di protocolli di monitoraggio per *Speleomantes sarrabusensis* (CR) e altri
-geotritoni endemici della Sardegna."
+title: "Monitoraggio dei geotritoni sardi minacciati"
+summary: "Sviluppo di un protocollo di monitoraggio efficace per *Speleomantes sarrabusensis* e altri geotritoni sardi minacciati."
 draft: false
 people:
   - name: "Leonardo Vignoli"
     slug: "vignoli"
+  - name: "Fabrizio Calò"
+    slug: "calo"
 ---
+
+## Scheda progetto
+
+**Progetto:** Monitoraggio dei geotritoni sardi minacciati
+
+**Acronimo:** Sardinian Cave Salamanders Monitoring
+
+**Periodo:** 2023-2025
+
+**Stato:** In corso / completamento
 
 ## Il progetto
 
-I geotritoni sardi sono anfibi endemici strettamente legati ad ambienti freschi e umidi, come grotte, fessure rocciose, cavità artificiali e affioramenti calcarei. La loro distribuzione spesso frammentata, la ridotta capacità di dispersione e la forte dipendenza dalle condizioni microclimatiche rendono queste specie particolarmente sensibili alle trasformazioni ambientali e ai cambiamenti climatici.
+Il progetto mira a sviluppare un protocollo di monitoraggio efficace per *Speleomantes sarrabusensis*, specie classificata Critically Endangered, e per altri geotritoni sardi minacciati, tra cui *Speleomantes supramontis* e *Speleomantes flavus*.
 
-Il progetto mira a sviluppare protocolli affidabili per il monitoraggio delle popolazioni sarde del genere *Speleomantes*, con particolare attenzione a *Speleomantes sarrabusensis*, specie endemica della Sardegna sud-orientale classificata come in pericolo critico.
+I geotritoni sardi sono anfibi endemici dell'isola, distribuiti in aree montane isolate e fortemente legati ad ambienti ipogei, forestali e di macchia mediterranea. Nonostante il loro elevato interesse conservazionistico, molti aspetti della loro ecologia restano poco conosciuti, in particolare l'attività epigea, cioè l'uso degli ambienti superficiali fuori dalle grotte.
 
-Le attività si basano su censimenti ripetuti nelle cavità e negli ambienti rocciosi frequentati dai geotritoni, accompagnati dalla misurazione di temperatura, umidità e caratteristiche dell'habitat. Poiché la probabilità di osservare gli individui varia notevolmente nel corso dell'anno, la pianificazione dei monitoraggi deve tenere conto della stagionalità e delle condizioni microclimatiche.
-
-Gli studi cofirmati da Leonardo Vignoli su *Speleomantes italicus* forniscono importanti basi ecologiche e metodologiche applicabili al monitoraggio dei geotritoni sardi. Le ricerche hanno mostrato che l'attività e la presenza degli individui nelle cavità seguono marcati andamenti stagionali, sono influenzate dalla temperatura e dall'umidità e variano tra le zone prossime all'ingresso e quelle più profonde.
+Il progetto prevede campagne di campo in condizioni stagionali e meteorologiche idonee, con transetti ripetuti per stimare distribuzione, detectability, abbondanza e requisiti ecologici delle specie. I dati raccolti saranno utilizzati per modelli di occupazione e N-mixture models, con l'obiettivo di costruire un protocollo di monitoraggio a lungo termine e supportare future azioni di conservazione.
 
 ## Obiettivi
 
-- definire protocolli standardizzati e ripetibili per il censimento dei geotritoni sardi;
-- valutare l'influenza di temperatura, umidità e stagionalità sulla rilevabilità degli individui;
-- descrivere l'uso delle diverse porzioni delle cavità e degli habitat rocciosi;
-- raccogliere dati sulla struttura e sull'andamento delle popolazioni nel lungo periodo;
-- individuare habitat e popolazioni maggiormente vulnerabili;
-- fornire informazioni utili alla valutazione dello stato di conservazione e alla pianificazione di interventi di tutela.
+- Chiarire la distribuzione reale delle specie target.
+- Stimare detectability e abbondanza in ambiente epigeo.
+- Identificare requisiti ecologici e ambientali.
+- Colmare le lacune conoscitive sull'attività fuori grotta.
+- Sviluppare un protocollo di monitoraggio a lungo termine.
+- Supportare valutazioni del rischio e azioni di conservazione.
 
-## Ecologia e monitoraggio
+## Metodi
 
-Le ricerche sulla nicchia spaziale di *Speleomantes italicus* hanno evidenziato un picco di attività tra primavera ed estate e una relazione tra abbondanza osservata e condizioni termiche. Durante i periodi estivi, le cavità possono rappresentare rifugi essenziali quando le condizioni esterne diventano incompatibili con le esigenze fisiologiche dei geotritoni. Gli adulti possono inoltre utilizzare maggiormente le zone vicine all'ingresso quando il microclima esterno è favorevole.
+- Selezione dei siti di indagine.
+- Transetti lineari ripetuti.
+- Campagne stagionali in condizioni meteorologiche favorevoli.
+- Modelli di occupazione.
+- N-mixture models.
+- Analisi demografiche e spaziali.
 
-Lo studio della nicchia trofica ha mostrato che le popolazioni ipogee possono alimentarsi durante buona parte dell'anno, ma con un'attività discontinua legata alla disponibilità stagionale delle prede. Nelle cavità, la minore disponibilità alimentare può determinare una nicchia trofica più ristretta rispetto alle popolazioni che utilizzano maggiormente gli ambienti esterni.
+## Specie target
 
-Questi risultati indicano che conteggi effettuati in una sola stagione o in condizioni microclimatiche non comparabili possono fornire stime poco rappresentative. Il monitoraggio dei geotritoni sardi deve quindi prevedere visite ripetute, registrazione sistematica delle condizioni ambientali e campionamenti condotti in periodi confrontabili.
+- *Speleomantes sarrabusensis*
+- *Speleomantes supramontis*
+- *Speleomantes flavus*
+
+## Area geografica
+
+Sardegna, Italia:
+
+- Monte dei Sette Fratelli
+- Supramonte / Golfo di Orosei
+- Monte Albo
+
+## Team e collaborazioni
+
+- Leonardo Vignoli
+- Fabrizio Calò
+- Pierluigi Bombi
+- Paolo Casula
+
+## Partner
+
+- Università Roma Tre
+- CNR
+- Agenzia Forestale Regionale per lo Sviluppo del Territorio e dell'Ambiente della Sardegna (FoReSTAS)
+
+## Finanziamento
+
+Mohamed bin Zayed Species Conservation Fund
+
+## Parole chiave
+
+- *Speleomantes*
+- Sardinian cave salamanders
+- amphibian conservation
+- monitoring protocol
+- occupancy models
+- N-mixture models
+- epigean activity
+- endangered amphibians
 
 {{< publications project="speleomantes" >}}
 
