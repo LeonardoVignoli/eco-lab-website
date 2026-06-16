@@ -89,38 +89,33 @@ title = "LEC - Lab for Ecology & Conservation"
 
   [[languages.it.menu.main]]
   name = "Home"
-  pageRef = "/lab"
+  url = "/"
   weight = 1
-
-  [[languages.it.menu.main]]
-  name = "Ricerca"
-  pageRef = "/research"
-  weight = 2
 
   [[languages.it.menu.main]]
   name = "Progetti"
   pageRef = "/projects"
-  weight = 3
+  weight = 2
 
   [[languages.it.menu.main]]
   name = "Persone"
   pageRef = "/people"
-  weight = 4
+  weight = 3
 
   [[languages.it.menu.main]]
   name = "Opportunità"
   pageRef = "/opportunities"
-  weight = 5
+  weight = 4
 
   [[languages.it.menu.main]]
   name = "News"
   url = "/categories/news/"
-  weight = 6
+  weight = 5
 
   [[languages.it.menu.main]]
   name = "Dicono di noi"
   pageRef = "/media"
-  weight = 7
+  weight = 6
 
 [languages.en]
 languageName = "English"
@@ -129,38 +124,33 @@ title = "LEC - Lab for Ecology & Conservation"
 
   [[languages.en.menu.main]]
   name = "Home"
-  pageRef = "/lab"
+  url = "/en/"
   weight = 1
-
-  [[languages.en.menu.main]]
-  name = "Research"
-  pageRef = "/research"
-  weight = 2
 
   [[languages.en.menu.main]]
   name = "Projects"
   pageRef = "/projects"
-  weight = 3
+  weight = 2
 
   [[languages.en.menu.main]]
   name = "People"
   pageRef = "/people"
-  weight = 4
+  weight = 3
 
   [[languages.en.menu.main]]
   name = "Opportunities"
   pageRef = "/opportunities"
-  weight = 5
+  weight = 4
 
   [[languages.en.menu.main]] 
   name = "News"
   url = "/categories/news/"
-  weight = 6
+  weight = 5
 
   [[languages.en.menu.main]]
   name = "Media"
   pageRef = "/media"
-  weight = 7
+  weight = 6
 
 
   #Enable wechat pay & alipay to allow readers send reward money if they like the articles 
