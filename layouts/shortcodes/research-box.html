@@ -1,0 +1,4 @@
+<aside class="research-box">
+  {{ with .Get "title" }}<h3>{{ . }}</h3>{{ end }}
+  <div>{{ .Inner | .Page.RenderString (dict "display" "block") }}</div>
+</aside>

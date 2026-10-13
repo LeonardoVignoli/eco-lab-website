@@ -1,0 +1,7 @@
+{{ $id := .Get "id" }}
+<figure class="project-video">
+  <div class="project-video-player">
+    <iframe src="https://www.youtube-nocookie.com/embed/{{ $id }}" title="{{ .Get "title" }}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <figcaption>{{ .Get "caption" }} <a href="https://www.youtube.com/watch?v={{ $id }}" target="_blank" rel="noopener noreferrer">{{ if eq .Page.Language.Lang "it" }}Guarda su YouTube{{ else }}Watch on YouTube{{ end }}</a></figcaption>
+</figure>

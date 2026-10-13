@@ -1,0 +1,105 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{ $siteTitle := .Site.Params.SEOTitle | default .Site.Title }}
+    {{ $pageTitle := cond .IsHome $siteTitle (printf "%s | %s" .Title $siteTitle) }}
+    {{ $defaultDescription := .Site.Params.description }}
+    {{ if eq .Site.Language.Lang "en" }}
+      {{ $defaultDescription = .Site.Params.description_en | default .Site.Params.description }}
+    {{ end }}
+    {{ if and .IsPage (eq .Section "people") }}
+      {{ $topics := delimit (.Params.keywords | default (slice)) ", " }}
+      {{ $defaultDescription = printf "%s — %s. LEC - Lab for Ecology & Conservation, Università Roma Tre. %s" .Title (.Params.role | default "") $topics }}
+    {{ end }}
+    {{ $description := .Params.description | default .Params.summary | default $defaultDescription | plainify | htmlUnescape | truncate 165 }}
+    {{ $image := .Params.thumbnail | default .Params.image | default .Site.Params.site_image | default .Site.Params.header_image_home | default .Site.Params.header_image_default }}
+    {{ $imageURL := $image | absURL }}
+    {{ if or (hasPrefix $image "http://") (hasPrefix $image "https://") }}
+      {{ $imageURL = $image }}
+    {{ end }}
+    {{ $locale := cond (eq .Site.Language.Lang "en") "en_US" "it_IT" }}
+
+    <title>{{ $pageTitle }}</title>
+    <meta name="title" content="{{ $pageTitle }}">
+    <meta name="description" content="{{ $description }}">
+    <meta name="keywords" content="{{ .Params.keywords | default .Site.Params.keyword }}">
+    <meta name="robots" content="{{ if .Params.noindex }}noindex, nofollow{{ else }}index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1{{ end }}">
+
+    <link rel="canonical" href="{{ .Permalink }}">
+    {{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+    {{ end }}
+    {{ range .AllTranslations }}
+      {{ if eq .Language.Lang "it" }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">{{ end }}
+    {{ end }}
+
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:title" content="{{ $pageTitle }}">
+    <meta property="og:description" content="{{ $description }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="{{ $imageURL }}">
+    <meta property="og:locale" content="{{ $locale }}">
+    {{ range .Translations }}
+    <meta property="og:locale:alternate" content="{{ if eq .Language.Lang "en" }}en_US{{ else }}it_IT{{ end }}">
+    {{ end }}
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $pageTitle }}">
+    <meta name="twitter:description" content="{{ $description }}">
+    <meta name="twitter:image" content="{{ $imageURL }}">
+
+    {{ if .IsHome }}
+      {{ $schema := dict "@context" "https://schema.org" "@type" "ResearchOrganization" "name" "LEC - Lab for Ecology & Conservation" "url" .Site.BaseURL "description" .Site.Params.description "department" "Dipartimento di Scienze" "parentOrganization" (dict "@type" "CollegeOrUniversity" "name" "Università degli Studi Roma Tre" "url" "https://www.uniroma3.it/") }}
+      <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+    {{ end }}
+
+    {{ if and .IsPage (eq .Section "people") }}
+      {{ $person := dict "@context" "https://schema.org" "@type" "ProfilePage" "@id" .Permalink "url" .Permalink "name" .Title "inLanguage" .Language.Lang "mainEntity" (dict "@type" "Person" "name" .Title "url" .Permalink "description" $description) }}
+      {{ with .Params.image }}
+        {{ $entity := merge $person.mainEntity (dict "image" (. | absURL)) }}
+        {{ $person = merge $person (dict "mainEntity" $entity) }}
+      {{ end }}
+      <script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
+    {{ end }}
+
+    <link rel="shortcut icon" href="{{ "img/favicon.ico" | relURL }}">
+
+    {{ if .Site.Params.disqus_proxy }}
+    <link rel="stylesheet" href="{{ "css/iDisqus.min.css" | relURL }}"/>
+    {{ end }}
+
+    <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/hugo-theme-cleanwhite.min.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/zanshang.min.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/font-awesome.all.min.css" | relURL }}">
+
+    {{ $noop := .WordCount }}
+    {{ if .Page.Store.Get "hasMath" -}}
+        {{ partial "math/katex-css.html" . -}}
+        {{ partial "math/katex-fonts.html" . -}}
+    {{ end -}}
+
+    {{ range .Site.Params.custom_css -}}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+    {{- end }}
+
+    <script src="{{ "js/jquery.min.js" | relURL }}"></script>
+    <script src="{{ "js/bootstrap.min.js" | relURL }}"></script>
+    <script src="{{ "js/hux-blog.min.js" | relURL }}"></script>
+    <script src="{{ "js/lazysizes.min.js" | relURL }}"></script>
+
+    {{ range .Site.Params.custom_js }}
+    <script src="{{ . | absURL }}"></script>
+    {{ end }}
+
+    {{ with resources.Get "css/lec-custom.css" | resources.Fingerprint "sha256" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+    {{ end }}
+</head>
+
+{{ if .Site.Config.Services.GoogleAnalytics.ID }}
+{{ template "_internal/google_analytics.html" . }}
+{{ end }}
