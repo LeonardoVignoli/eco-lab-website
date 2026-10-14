@@ -27,6 +27,22 @@ Non necessariamente: un aumento dei siti documentati può riflettere una ricerca
 [Leggi lo studio su Oryx](https://doi.org/10.1017/S0030605315001416).
 {{< /research-box >}}
 
+## Acqua, siccità e qualità dell’habitat
+
+Per l’euprotto non conta soltanto la presenza di un corso d’acqua, ma anche quanto a lungo l’acqua rimane disponibile. La riduzione dell’idroperiodo — il periodo in cui un ambiente conserva acqua — può restringere i rifugi acquatici e compromettere lo sviluppo delle larve. Siccità prolungate, prelievi idrici e frammentazione degli habitat possono agire insieme, aumentando la vulnerabilità delle popolazioni isolate.
+
+I tratti prossimi alle sorgenti possono offrire rifugi importanti durante i periodi asciutti, grazie ad acque più fresche e a una maggiore persistenza dell’acqua in superficie. La loro idoneità va comunque valutata sul campo: disponibilità idrica stagionale, temperatura, struttura del torrente, rifugi e presenza di predatori acquatici introdotti contribuiscono a determinare la qualità dell’habitat.
+
+{{< research-box title="Prima l’habitat, poi il rilascio" >}}
+Allevare e riprodurre una specie in ambiente controllato rende disponibili animali per la conservazione, ma non risolve le cause del declino in natura. Un rilascio richiede un habitat idoneo anche nella stagione critica, compatibilità genetica, controlli sanitari e monitoraggio successivo. Il numero di animali liberati, da solo, non misura il successo dell’intervento.
+{{< /research-box >}}
+
+## Leggere insieme popolazioni e ambiente
+
+La valutazione delle popolazioni richiede di affiancare ai ricontatti individuali informazioni sulla riproduzione, sulla presenza di giovani e sulle condizioni dei siti. L’osservazione di adulti e larve assume un significato diverso se viene messa in relazione con la continuità dell’acqua e con l’andamento delle stagioni asciutte.
+
+Anche il rischio sanitario fa parte della valutazione: gli spostamenti di animali e le attività di campo richiedono attenzione alla possibile diffusione di patogeni. La conservazione integra quindi qualità dell’habitat, provenienza degli individui e precauzioni sanitarie.
+
 ## L’allevamento al Bioparco
 
 Il programma ex situ mantiene gruppi di diversa provenienza per rappresentare la diversità genetica della specie. Gli individui nati in cattività vengono allevati fino a uno stadio idoneo al rilascio, seguendo protocolli di gestione e controllo sanitario. Gli acquari dispongono di sistemi di raffreddamento, filtrazione e ossigenazione dell’acqua, la cui qualità viene monitorata regolarmente.
@@ -38,6 +54,8 @@ Il programma ex situ mantiene gruppi di diversa provenienza per rappresentare la
 Il sito di rilascio nel massiccio dei Settefratelli è stato selezionato attraverso lo studio della presenza storica della specie e sopralluoghi dedicati alla disponibilità d’acqua, alla copertura vegetale, alle minacce e all’idoneità sanitaria. La compatibilità genetica tra gli individui allevati e le popolazioni dell’area costituisce un criterio centrale della scelta.
 
 Il **1° ottobre 2019** sono stati rilasciati **30 adulti: 15 maschi e 15 femmine**. Il monitoraggio fino all’estate 2020 ha documentato la presenza degli individui e l’osservazione di larve, evidenza dell’avvenuta riproduzione. Le restrizioni legate alla pandemia hanno successivamente interrotto le attività per parte del 2020 e del 2021.
+
+Nonostante la riproduzione osservata nel 2020, la prima reintroduzione non ha portato al mantenimento di una popolazione nel lungo periodo. La siccità prolungata e la perdita di acqua superficiale costituiscono una possibile spiegazione di questo esito, senza che sia possibile attribuirlo con certezza a una sola causa. L’esperienza sottolinea l’importanza di valutare la persistenza dei rifugi acquatici nelle stagioni più asciutte, oltre alla riuscita dell’allevamento e del rilascio.
 
 Nel **2024** sono stati rilasciati **altri 38 animali** nel sito dei Settefratelli. Nello stesso anno sono stati riportati nei rispettivi siti di origine anche gli individui fondatori provenienti da **Perdasdefogu** e **Villagrande Strisaili**.
 

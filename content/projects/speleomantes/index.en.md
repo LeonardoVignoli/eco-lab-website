@@ -27,6 +27,26 @@ Sardinian cave salamanders are endemic amphibians restricted to isolated mountai
 
 The project includes field surveys under suitable seasonal and meteorological conditions, using repeated linear transects to estimate distribution, detectability, abundance and ecological requirements. The collected data will support site occupancy models and N-mixture models, contributing to a long-term monitoring protocol and future conservation planning.
 
+## Beyond caves
+
+The name “cave salamanders” highlights their association with subterranean environments, but caves represent only part of the habitats that need attention. Rocky outcrops, screes, crevices, wooded slopes and Mediterranean shrubland can provide shelter and suitable conditions for surface activity. Focusing exclusively on caves risks overlooking an important component of these species’ distribution and ecology.
+
+This is particularly relevant to *Speleomantes sarrabusensis*, which inhabits the predominantly granitic, largely cave-less Sette Fratelli area. For *S. flavus*, endemic to Monte Albo, and *S. supramontis*, occurring in the Supramonte and Gulf of Orosei area, attention to surface environments complements research on caves and subterranean refuges.
+
+{{< research-box title="A refuge is also a microclimate" >}}
+A rock crevice provides more than physical shelter. Its value also depends on moisture, temperature and protection from drying. Shade, vegetation and soil structure help maintain these conditions: protecting salamanders also means considering the habitat surrounding their refuges.
+{{< /research-box >}}
+
+## Distinguishing absence from non-detection
+
+Surface activity depends on seasonal and weather conditions. Failing to observe animals during one visit does not demonstrate absence. Repeated transects and environmental records help interpret counts and, where possible, distinguish variation in detectability from differences in occurrence or abundance.
+
+## From monitoring to habitat conservation
+
+Identifying refuges and the conditions associated with salamander occurrence can inform the management of rocky and forested habitats. Maintaining vegetation cover and humid refuges is particularly relevant in the face of drought, fire, woodland alteration and local disturbance. Fieldwork also requires precautions to reduce the risk of moving pathogens between sites.
+
+Monitoring therefore has an applied purpose: recognising important habitats outside caves and providing evidence to assess their vulnerability and conservation requirements over time.
+
 ## Objectives
 
 - Clarify the actual distribution of the target species.

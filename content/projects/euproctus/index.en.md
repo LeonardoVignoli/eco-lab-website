@@ -27,6 +27,22 @@ Not necessarily: more documented sites may reflect a wider search effort. Assess
 [Read the Oryx study](https://doi.org/10.1017/S0030605315001416).
 {{< /research-box >}}
 
+## Water, drought and habitat quality
+
+For the Sardinian brook newt, the presence of a stream alone is not enough: the duration of water availability also matters. A shorter hydroperiod — the period during which a habitat holds water — can reduce aquatic refuges and compromise larval development. Prolonged drought, water abstraction and habitat fragmentation can act together, increasing the vulnerability of isolated populations.
+
+Spring-fed headwater reaches can provide important dry-season refuges through cooler conditions and more persistent surface water. Their suitability still requires field assessment: seasonal water availability, temperature, stream structure, shelter and introduced aquatic predators all contribute to habitat quality.
+
+{{< research-box title="Suitable habitat comes before release" >}}
+Captive breeding makes animals available for conservation, but does not remove the causes of decline in the wild. A release requires habitat that remains suitable through critical periods, genetic compatibility, health screening and follow-up monitoring. The number of animals released alone does not measure success.
+{{< /research-box >}}
+
+## Connecting population and environmental evidence
+
+Assessing populations requires information on reproduction, juvenile occurrence and site conditions alongside individual re-encounters. Observations of adults and larvae become more informative when considered together with water persistence and seasonal drought.
+
+Health risks also matter: animal movements and fieldwork require precautions against pathogen spread. Conservation therefore brings together habitat quality, animal provenance and sanitary safeguards.
+
 ## Captive breeding at Bioparco
 
 The ex situ programme maintains groups from different source populations to represent the species’ genetic diversity. Captive-born animals are raised to a suitable release stage under husbandry and health-screening protocols. Aquaria include water cooling, filtration and aeration systems, with regular water-quality monitoring.
@@ -38,6 +54,8 @@ The ex situ programme maintains groups from different source populations to repr
 The release site was selected through an assessment of the species’ historical presence and field visits examining water availability, vegetation cover, threats and health risks. Genetic compatibility between captive animals and populations in the area is a central selection criterion.
 
 On **1 October 2019**, **30 adults — 15 males and 15 females — were released**. Monitoring through summer 2020 recorded released animals and larvae, providing evidence of reproduction. Pandemic restrictions subsequently interrupted activities during part of 2020 and 2021.
+
+Despite the reproduction observed in 2020, the first reintroduction did not establish a population that persisted over the long term. Prolonged drought and the loss of surface water offer a possible explanation, although the outcome cannot be attributed with certainty to a single cause. This experience highlights the importance of assessing whether aquatic refuges persist through dry periods, alongside successful captive breeding and release.
 
 In **2024**, **another 38 animals** were released at the Settefratelli site. Founder animals originally collected at **Perdasdefogu** and **Villagrande Strisaili** were also returned to their respective source sites that year.
 
